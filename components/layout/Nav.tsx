@@ -60,7 +60,7 @@ export function Nav() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-[11px] tracking-[0.15em] uppercase font-medium font-body transition-colors duration-200",
+                "text-[11px] tracking-[0.15em] uppercase font-medium font-body transition-colors duration-200 link-underline",
                 isActive(link.href)
                   ? "text-[var(--red)]"
                   : "text-[var(--charcoal)] hover:text-[var(--red)]"

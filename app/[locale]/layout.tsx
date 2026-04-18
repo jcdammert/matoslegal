@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "../globals.css";
 import { LocaleProvider } from "@/components/LocaleProvider";
+import { ScrollProgressBar } from "@/components/primitives/ScrollProgressBar";
 import { getDictionary, isValidLocale, locales, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 
@@ -60,6 +61,7 @@ export default async function LocaleLayout({
         className="font-body antialiased"
         style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}
       >
+        <ScrollProgressBar />
         <LocaleProvider locale={locale as Locale} dictionary={dictionary}>
           {children}
         </LocaleProvider>

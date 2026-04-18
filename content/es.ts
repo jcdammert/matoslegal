@@ -24,10 +24,10 @@ export const content: Content = {
     ctaSecondary: "Consulta Gratis",
   },
   stats: [
-    { num: "24+", label: "Años de Experiencia" },
-    { num: "1000+", label: "Casos Manejados" },
-    { num: "100%", label: "Servicio Bilingüe" },
-    { num: "Gratis", label: "Consulta" },
+    { num: "24", suffix: "+", label: "Años de Experiencia" },
+    { num: "1000", suffix: "+", label: "Casos Manejados" },
+    { num: "100", suffix: "%", label: "Servicio Bilingüe" },
+    { num: "Gratis", suffix: "", label: "Consulta" },
   ],
   urgency: {
     title: "¿Enfrenta una Ejecución Hipotecaria? ¿Disputa Contractual?",
@@ -59,19 +59,32 @@ export const content: Content = {
         desc: "Protegemos a los propietarios que enfrentan ejecuciones hipotecarias con defensa legal estratégica y soluciones personalizadas.",
         slug: "foreclosure-defense",
         detail: {
-          overview: [
-            "Enfrentar una ejecución hipotecaria es una de las experiencias más estresantes que puede vivir un propietario. En Matos Legal, PLLC entendemos la urgencia y el peso emocional de la situación. La abogada Rosalind J. Matos ha trabajado en primera línea de la defensa hipotecaria en el Sur de la Florida, ayudando a propietarios a combatir a los prestamistas y proteger sus hogares.",
-            "Nuestro bufete examina cada aspecto de su hipoteca, la documentación del préstamo y la conducta del prestamista para identificar posibles defensas y margen de negociación. Ya sea que su objetivo sea salvar su hogar, gestionar una modificación de préstamo o ganar tiempo mientras planifica sus próximos pasos, desarrollamos una estrategia legal adaptada a sus circunstancias particulares.",
-            "Atendemos a propietarios en Miami-Dade, Broward y Palm Beach y tenemos experiencia tanto en tribunales estatales como federales y en procedimientos de quiebra. No tiene que enfrentar la ejecución hipotecaria solo — cuanto antes nos contacte, más opciones tendrá.",
+          heroSub:
+            "Estrategia personalizada. Comunicación abierta. Dos décadas de experiencia de su lado.",
+          intro:
+            "Cuando se trata de una ejecución hipotecaria o de negociar con el banco, puede sentir que su mundo se cierra. Recibir un aviso de que su prestamista intenta ejecutar su hogar es abrumador. Le ayudamos a navegar el sistema y encontrar la mejor solución para usted y su familia.",
+          body: [
+            "Cada caso y cada cliente son diferentes — la estrategia legal individualizada funciona mejor. Una acción de ejecución hipotecaria puede afectar el futuro de un propietario por las posibles consecuencias negativas. Es importante obtener representación legal para proteger sus derechos, entender sus opciones y asegurar el mejor resultado posible.",
+            "Le ayudamos si ha sido demandado por su prestamista, banco, HOA y/o asociación de condominio. Podemos sentarnos con usted para discutir y definir un plan de acción, estrategia legal, y guiarle a través del proceso.",
           ],
-          howWeHelp: [
-            "Revisar e impugnar presentaciones y documentación hipotecaria incorrectas",
-            "Negociar modificaciones de préstamos y planes de pago con los prestamistas",
-            "Plantear defensas afirmativas basadas en mala conducta del prestamista o errores procedimentales",
-            "Representar clientes en mediaciones hipotecarias y audiencias judiciales",
-          ],
-          whatToExpect:
-            "Tras su consulta gratuita, revisaremos los documentos relevantes y explicaremos sus opciones con honestidad. Si decide contratarnos, presentamos escritos de respuesta, realizamos el descubrimiento de pruebas y lo representamos en cada etapa. Lo mantenemos informado en todo momento y siempre estamos disponibles para responder sus preguntas.",
+          services: {
+            heading: "Cómo Lo Ayudamos",
+            items: [
+              "Defensa contra demandas de ejecución hipotecaria de bancos y prestamistas",
+              "Acciones de ejecución hipotecaria de HOA y asociaciones de condominio",
+              "Negociación y asistencia con modificaciones de préstamos",
+              "Resolución de disputas hipotecarias",
+              "Orientación sobre ventas cortas y alternativas a la ejecución",
+              "Defensa contra sentencias de deficiencia",
+              "Impugnar la legitimación y documentación de la parte ejecutante",
+              "Protección de los derechos del propietario durante todo el proceso legal",
+            ],
+          },
+          approach: {
+            eyebrow: "— NUESTRO ENFOQUE",
+            heading: "Por Qué Necesita un Abogado de Defensa Hipotecaria",
+            body: "La ejecución hipotecaria es un proceso legal complejo con plazos y procedimientos estrictos. Sin representación legal adecuada, los propietarios pueden perder plazos críticos o pasar por alto defensas que podrían salvar su hogar. Los prestamistas y sus abogados tienen experiencia en este proceso — usted merece a alguien igualmente experimentado de su lado. La abogada Rosalind Matos ha pasado años en defensa hipotecaria, primero en el Servicio de Asistencia Legal del Condado de Broward ayudando a familias de bajos ingresos, luego gestionando un departamento de ejecuciones hipotecarias completo, y ahora en su propio bufete con la misma dedicación. Consulta telefónica gratuita disponible.",
+          },
         },
       },
       {
@@ -81,19 +94,32 @@ export const content: Content = {
         desc: "Representamos clientes en todas las etapas del litigio civil, desde disputas comerciales hasta personales.",
         slug: "civil-litigation",
         detail: {
-          overview: [
-            "El litigio civil abarca un amplio espectro de disputas legales — desde desacuerdos en contratos comerciales y conflictos de propiedad hasta reclamaciones de protección al consumidor y asuntos entre arrendatarios e inquilinos. Matos Legal, PLLC aporta más de dos décadas de experiencia en juicios y apelaciones a cada caso, garantizando que sus intereses sean representados con solidez en cada etapa del proceso.",
-            "Representamos tanto a individuos como a empresas en los tribunales del Sur de la Florida. Nuestro enfoque es estratégico: antes de litigar, evaluamos si la negociación, mediación o arbitraje pueden resolver la disputa de manera más eficiente. Cuando el litigio es necesario, procedemos con precisión y determinación.",
-            "La abogada Matos tiene una sólida trayectoria en procedimientos civiles estatales y federales y comprende cómo construir el expediente necesario para prevalecer en juicio y proteger la posición del cliente en apelación.",
+          heroSub:
+            "Defensa estratégica desde la negociación hasta el juicio. Su disputa, manejada con precisión.",
+          intro:
+            "El litigio civil abarca un amplio espectro de disputas — desde incumplimientos de contratos comerciales y conflictos de propiedad hasta reclamaciones de protección al consumidor y asuntos entre arrendatarios e inquilinos. En Matos Legal, PLLC, representamos tanto a individuos como a empresas en los tribunales del Sur de la Florida con precisión y determinación.",
+          body: [
+            "Nuestro enfoque comienza con una evaluación franca de su asunto — las fortalezas, las debilidades y el rango realista de resultados. Evaluamos si la negociación, mediación o arbitraje pueden resolver la disputa de manera eficiente antes de comprometerse con los costos del litigio completo.",
+            "Cuando el litigio es necesario, la abogada Matos construye el expediente estratégicamente, desde los escritos iniciales hasta el descubrimiento, las audiencias y el juicio. Su trayectoria en la práctica civil estatal y federal significa que su asunto es manejado por alguien que entiende el proceso en cada nivel.",
           ],
-          howWeHelp: [
-            "Evaluar los méritos de su reclamación y desarrollar una estrategia de litigio",
-            "Redactar y presentar demandas, mociones y escritos procesales",
-            "Realizar un descubrimiento exhaustivo que incluye deposiciones y revisión de documentos",
-            "Representar clientes en mediaciones, audiencias, juicios y apelaciones",
-          ],
-          whatToExpect:
-            "Comenzamos con una evaluación franca de su caso — incluyendo resultados realistas y costos. A partir de ahí, nos encargamos de todos los aspectos del litigio para que usted pueda enfocarse en su vida o negocio. Nos comunicamos proactivamente y nos aseguramos de que entienda cada desarrollo en su asunto.",
+          services: {
+            heading: "Cómo Lo Ayudamos",
+            items: [
+              "Disputas de contratos comerciales y reclamaciones por incumplimiento",
+              "Disputas de propiedad, incluyendo límites y títulos",
+              "Protección al consumidor y prácticas comerciales desleales",
+              "Litigios entre arrendatarios e inquilinos",
+              "Defensa ante cobros de deudas",
+              "Disputas de arrendamientos comerciales y residenciales",
+              "Cobros y ejecución de sentencias",
+              "Negociación pre-litigio y cartas de demanda",
+            ],
+          },
+          approach: {
+            eyebrow: "— NUESTRO ENFOQUE",
+            heading: "Estrategia Primero. Litigio Cuando Sea Necesario.",
+            body: "No toda disputa requiere un tribunal. Comenzamos evaluando todos los caminos disponibles — negociación, mediación y arbitraje — porque resolver disputas de manera eficiente ahorra a nuestros clientes tiempo, dinero y estrés. Cuando el litigio es la decisión correcta, lo perseguimos con precisión. La abogada Matos ha manejado asuntos civiles desde la demanda inicial hasta el juicio y la apelación en tribunales estatales y federales, asegurando que sus intereses estén protegidos en cada etapa.",
+          },
         },
       },
       {
@@ -103,19 +129,32 @@ export const content: Content = {
         desc: "Buscamos justicia para los lesionados por negligencia con compasión y dedicación.",
         slug: "personal-injury",
         detail: {
-          overview: [
-            "Cuando usted o un ser querido sufre una lesión por la negligencia de otra persona, el impacto físico, emocional y financiero puede ser devastador. Matos Legal, PLLC defiende a las personas lesionadas en el Sur de la Florida, trabajando para obtener una compensación justa para que usted pueda concentrarse en su recuperación.",
-            "Manejamos casos derivados de accidentes automovilísticos, caídas, responsabilidad de locales y otras lesiones basadas en negligencia. Nuestro bufete investiga cada caso a fondo, colaborando con profesionales médicos y expertos en reconstrucción de accidentes cuando es necesario para construir la reclamación más sólida posible.",
-            "Manejamos casos de lesiones personales en base a honorarios contingentes — lo que significa que no paga honorarios de abogado a menos que recuperemos para usted. Su recuperación es nuestra prioridad.",
+          heroSub:
+            "Sin honorarios a menos que recuperemos. Dedicación total a su caso desde el primer día.",
+          intro:
+            "Cuando usted o un ser querido sufre una lesión por negligencia de otra persona, todo puede cambiar en un instante. Las facturas médicas se acumulan, los ingresos se detienen, y la compañía de seguros comienza a velar por sus propios intereses — no los suyos. La abogada Rosalind J. Matos está de su lado desde el momento en que llama.",
+          body: [
+            "Manejamos casos de lesiones personales derivados de accidentes automovilísticos, responsabilidad de locales, caídas y otras lesiones basadas en negligencia en todo el Sur de la Florida. Nuestro bufete investiga cada caso a fondo, trabajando con proveedores médicos y especialistas en reconstrucción de accidentes cuando es necesario para construir la reclamación más sólida posible.",
+            "Los casos de lesiones personales se manejan en base a honorarios contingentes — no paga honorarios de abogado a menos que recuperemos compensación para usted. Anticipamos todos los costos del caso y somos compensados solo cuando ganamos.",
           ],
-          howWeHelp: [
-            "Investigar el accidente, recopilar evidencia y preservar el testimonio de testigos",
-            "Coordinar con proveedores médicos para documentar sus lesiones con precisión",
-            "Negociar de manera asertiva con las compañías de seguros para lograr acuerdos justos",
-            "Llevar su caso a juicio cuando los aseguradores se niegan a ofrecer una compensación justa",
-          ],
-          whatToExpect:
-            "Su consulta gratuita es confidencial y no implica ninguna obligación. Explicaremos el proceso de reclamaciones por lesiones personales, evaluaremos el valor de su caso y delinearemos los próximos pasos. Si avanzamos juntos, nos encargamos de cada aspecto de su reclamación para que pueda concentrarse en su recuperación.",
+          services: {
+            heading: "Cómo Lo Ayudamos",
+            items: [
+              "Accidentes automovilísticos y reclamaciones por choques",
+              "Caídas y responsabilidad de locales",
+              "Negociación con compañías de seguros",
+              "Documentación de lesiones y tratamiento médico",
+              "Reclamación de salarios perdidos e ingresos futuros",
+              "Daños por dolor y sufrimiento",
+              "Reclamaciones por muerte injusta",
+              "Representación en juicio cuando los aseguradores no ofrecen compensación justa",
+            ],
+          },
+          approach: {
+            eyebrow: "— NUESTRO ENFOQUE",
+            heading: "Su Recuperación Es Nuestra Prioridad",
+            body: "Las compañías de seguros tienen equipos de ajustadores y abogados cuyo trabajo es minimizar lo que le pagan. Nuestro trabajo es lo opuesto — maximizar su recuperación y asegurar que cada elemento de sus daños esté correctamente documentado, valorado y reclamado. Nos encargamos de todo, desde la investigación hasta el acuerdo o el juicio, para que pueda concentrarse en lo que más importa: recuperarse.",
+          },
         },
       },
       {
@@ -125,19 +164,32 @@ export const content: Content = {
         desc: "Defendemos las libertades civiles y los derechos constitucionales con experiencia y convicción.",
         slug: "civil-rights",
         detail: {
-          overview: [
-            "Las violaciones de derechos civiles — incluyendo mala conducta policial, perfilamiento racial, detención ilegal e infracciones a la libertad de expresión o religiosa — exigen un defensor sin miedo. La abogada Rosalind J. Matos inició su carrera legal como Abogada de Personal del Sur de la Florida para la ACLU de Florida, donde pasó casi ocho años litigando casos federales de derechos civiles.",
-            "Esa base informa todo lo que hacemos en asuntos de derechos civiles. Entendemos el marco constitucional, el panorama procesal del litigio federal de derechos civiles bajo la Sección 1983, y la importancia de construir un expediente exhaustivo y bien documentado. Tomamos estos casos en serio porque sus derechos importan.",
-            "Representamos a individuos y comunidades cuyos derechos constitucionales y civiles han sido violados por actores gubernamentales, agencias de aplicación de la ley e instituciones.",
+          heroSub:
+            "Derechos constitucionales defendidos con convicción. Dos décadas de experiencia en libertades civiles.",
+          intro:
+            "Las violaciones de derechos civiles — mala conducta policial, perfilamiento racial, detención ilegal e infracciones a la libertad de expresión o religiosa — requieren un abogado que entienda tanto la ley como las consecuencias. La abogada Rosalind J. Matos pasó casi ocho años como Abogada de Personal del Sur de la Florida para la ACLU de Florida antes de fundar Matos Legal, PLLC.",
+          body: [
+            "Esa base — litigando casos federales de derechos civiles, testificando ante comités legislativos, sirviendo en el Comité Asesor de Perfilamiento Racial de Miami-Dade — informa cada asunto de derechos civiles que tomamos. Entendemos la Sección 1983, la doctrina de inmunidad calificada y los estándares probatorios que determinan si un caso sobrevive hasta el juicio.",
+            "Representamos a individuos y comunidades cuyos derechos constitucionales han sido violados por agencias de aplicación de la ley, funcionarios gubernamentales e instituciones. Estos casos son desafiantes, pero importan — y los perseguimos con la convicción que merecen.",
           ],
-          howWeHelp: [
-            "Evaluar reclamaciones de mala conducta policial, fuerza excesiva y registro o arresto ilegal",
-            "Presentar quejas de derechos civiles en tribunales estatales y federales incluyendo acciones bajo la Sección 1983",
-            "Buscar medidas cautelares e indemnización en nombre de las personas afectadas",
-            "Colaborar con organizaciones de defensa y grupos comunitarios en asuntos sistémicos",
-          ],
-          whatToExpect:
-            "Los casos de derechos civiles requieren una investigación fáctica cuidadosa y una estrategia legal precisa. Comenzamos por entender exactamente qué ocurrió, revisando cualquier evidencia disponible y evaluando la viabilidad. Somos directos sobre los desafíos que presentan estos casos y estamos comprometidos a buscar justicia donde existe una reclamación viable.",
+          services: {
+            heading: "Cómo Lo Ayudamos",
+            items: [
+              "Mala conducta policial y reclamaciones de fuerza excesiva",
+              "Perfilamiento racial y étnico",
+              "Arresto ilegal y encarcelamiento falso",
+              "Primera Enmienda — violaciones a la libertad de expresión y religiosa",
+              "Cuarta Enmienda — registro y arresto ilegal",
+              "Acciones de derechos civiles bajo la Sección 1983 en tribunal federal",
+              "Medidas cautelares para detener violaciones constitucionales continuas",
+              "Defensa en colaboración con organizaciones de libertades civiles",
+            ],
+          },
+          approach: {
+            eyebrow: "— NUESTRO ENFOQUE",
+            heading: "Los Casos de Derechos Civiles Requieren Defensa Sin Miedo",
+            body: "Estos casos son complejos, a menudo involucrando inmunidad calificada y otras defensas gubernamentales. Comenzamos con una cuidadosa investigación fáctica, revisando toda la evidencia disponible antes de asesorar sobre la viabilidad. Cuando los hechos apoyan una reclamación, la perseguimos con precisión y convicción — en tribunal estatal, federal y en el registro público. Los ocho años de la abogada Matos en la ACLU significan que tiene a alguien en su equipo que lleva mucho tiempo luchando estas batallas.",
+          },
         },
       },
     ],
@@ -206,6 +258,16 @@ export const content: Content = {
     ctaPrimary: "Agendar Ahora",
     ctaSecondary: "954-531-5658",
   },
+  practiceDetailCta: {
+    headlineStart: "¿Necesita",
+    headlineAccent: "Ayuda Legal",
+    headlineEnd: "?",
+    sub: "Contáctenos hoy para una consulta telefónica gratuita. Sin obligación — solo respuestas claras.",
+    cta: "Contáctenos",
+    phone: "954-531-5658",
+  },
+  exploreMore: "Otras Áreas de Práctica",
+  learnMore: "Más Información",
   attorney: {
     badge: "FUNDADORA Y PROPIETARIA",
     headlineStart: "Conozca a",
@@ -255,25 +317,38 @@ export const content: Content = {
   },
   contact: {
     eyebrow: "— CONTÁCTENOS",
-    headlineStart: "Hablemos",
-    headlineAccent: "",
+    headlineStart: "Contacte a",
+    headlineAccent: "Matos Legal",
     subhead:
-      "Sea lo que sea que esté enfrentando, el primer paso es una conversación gratuita y honesta. En inglés o en español.",
+      "Consulta telefónica gratuita. Sin obligación. Solo respuestas claras y orientación honesta.",
     address:
       "Lakeside Executive Suites, 2645 Executive Park Drive, Ste. 676, Weston FL 33331",
+    formCard: {
+      eyebrow: "— CONSULTA GRATUITA",
+      headlineStart: "Envíenos Un",
+      headlineAccent: "Mensaje",
+      sub: "Complete este formulario para programar una consulta telefónica GRATUITA. ¡Esperamos saber de usted!",
+    },
+    reachUs: {
+      eyebrow: "— CONTÁCTENOS",
+      heading: "Comuníquese",
+      office: "OFICINA",
+      phoneLabel: "TELÉFONO",
+      emailLabel: "CORREO",
+    },
     formTitle: "Envíenos un Mensaje",
     formFields: {
+      name: "Nombre",
       firstName: "Nombre",
       lastName: "Apellido",
       email: "Correo Electrónico",
       phone: "Número de Teléfono",
       matter: "Tipo de Asunto",
-      message: "Descripción Breve",
-      submit: "Enviar Mensaje",
+      message: "Mensaje",
+      submit: "Enviar",
       disclaimer:
         "El envío de este formulario no crea una relación abogado-cliente. No se hace ni se implica ninguna garantía de un resultado particular.",
-      success:
-        "¡Gracias! Nos comunicaremos con usted en un día hábil.",
+      success: "¡Gracias! Nos comunicaremos con usted en un día hábil.",
       matters: [
         "Defensa ante Ejecución Hipotecaria",
         "Litigio Civil",
@@ -284,13 +359,44 @@ export const content: Content = {
     },
   },
   resources: {
-    eyebrow: "— RECURSOS",
+    eyebrow: "— ENLACES ÚTILES",
     headlineStart: "Recursos",
     headlineAccent: "Legales",
-    coming:
-      "Estamos trabajando en una biblioteca de recursos legales útiles para los residentes del Sur de la Florida. Vuelva pronto.",
-    ctaText:
-      "Mientras tanto, contáctenos para hablar directamente con la abogada Matos.",
+    subhead:
+      "Registros de tribunales, tasadores de propiedades y organizaciones legales de confianza en el Sur de la Florida.",
+    categories: [
+      {
+        num: "01",
+        icon: "landmark",
+        title: "Registros de Tribunales y Propiedades",
+        links: [
+          { label: "Búsqueda de Casos Públicos de Broward", url: "https://www.browardclerk.org/" },
+          { label: "Tasador de Propiedades del Condado de Broward", url: "https://www.bcpa.net/" },
+          { label: "Búsqueda de Registros Oficiales de Broward", url: "https://officialrecords.broward.org/" },
+          { label: "Búsqueda de Casos del Tribunal de Miami-Dade", url: "https://www.miami-dadeclerk.com/" },
+          { label: "Tasador de Propiedades de Miami-Dade", url: "https://www.miamidade.gov/pa/" },
+          { label: "Búsqueda de Registros Oficiales de Miami-Dade", url: "https://onlineservices.miami-dadeclerk.com/" },
+          { label: "Registros del Tribunal de Palm Beach", url: "https://www.mypalmbeachclerk.com/" },
+          { label: "Tasador de Propiedades de Palm Beach", url: "https://pbcpao.gov/" },
+          { label: "Registros Oficiales de Palm Beach", url: "https://or.pbcgov.com/" },
+        ],
+      },
+      {
+        num: "02",
+        icon: "book-open",
+        title: "Organizaciones Legales",
+        links: [
+          { label: "Estatutos de Florida en Línea", url: "https://www.leg.state.fl.us/statutes/" },
+          { label: "El Colegio de Abogados de Florida", url: "https://www.floridabar.org/" },
+          { label: "Tribunal de Apelaciones del Tercer Distrito", url: "https://3dca.flcourts.org/" },
+          { label: "Tribunal de Apelaciones del Cuarto Distrito", url: "https://4dca.flcourts.org/" },
+          { label: "Servicio de Asistencia Legal del Condado de Broward", url: "https://legalaid.org/" },
+          { label: "Servicios Legales del Gran Miami", url: "https://www.lsgmi.org/" },
+          { label: "Sociedad de Asistencia Legal del Condado de Palm Beach", url: "https://www.legalaidpbc.org/" },
+          { label: "Fiscal General de Florida", url: "https://myfloridalegal.com/" },
+        ],
+      },
+    ],
   },
   footer: {
     blurb:

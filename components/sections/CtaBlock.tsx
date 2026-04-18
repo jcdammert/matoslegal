@@ -4,6 +4,7 @@ import { Phone } from "lucide-react";
 import { useLocale } from "@/components/LocaleProvider";
 import { SectionHeading } from "@/components/primitives/SectionHeading";
 import { Button } from "@/components/primitives/Button";
+import { MagneticButton } from "@/components/primitives/MagneticButton";
 import { RevealOnScroll } from "@/components/primitives/RevealOnScroll";
 
 export function CtaBlock() {
@@ -31,9 +32,11 @@ export function CtaBlock() {
           />
           <p className="text-white/60 text-lg max-w-xl mx-auto mb-10">{c.sub}</p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button href={`/${locale}/contact`} variant="primary">
-              {c.ctaPrimary}
-            </Button>
+            <MagneticButton>
+              <Button href={`/${locale}/contact`} variant="primary">
+                {c.ctaPrimary}
+              </Button>
+            </MagneticButton>
             <a
               href={`tel:${c.ctaSecondary}`}
               className="inline-flex items-center gap-2 px-7 py-4 text-xs tracking-[0.2em] uppercase font-medium font-body border border-white/40 text-white hover:bg-white hover:text-[var(--charcoal)] transition-all duration-200"

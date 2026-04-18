@@ -22,10 +22,10 @@ export const content = {
     ctaSecondary: "Free Consultation",
   },
   stats: [
-    { num: "24+", label: "Years Experience" },
-    { num: "1000+", label: "Cases Handled" },
-    { num: "100%", label: "Bilingual Service" },
-    { num: "Free", label: "Consultation" },
+    { num: "24", suffix: "+", label: "Years Experience" },
+    { num: "1000", suffix: "+", label: "Cases Handled" },
+    { num: "100", suffix: "%", label: "Bilingual Service" },
+    { num: "Free", suffix: "", label: "Consultation" },
   ],
   urgency: {
     title: "Facing Foreclosure? Contract Dispute?",
@@ -57,19 +57,32 @@ export const content = {
         desc: "Protecting homeowners facing foreclosure with strategic legal defense and personalized solutions.",
         slug: "foreclosure-defense",
         detail: {
-          overview: [
-            "Facing foreclosure is one of the most stressful experiences a homeowner can endure. At Matos Legal, PLLC, we understand the urgency and emotional weight of the situation. Attorney Rosalind J. Matos has spent years at the front lines of foreclosure defense in South Florida, helping homeowners fight back against lenders and protect the places they call home.",
-            "Our firm examines every aspect of your mortgage, loan documentation, and lender conduct to identify potential defenses and negotiation leverage. Whether your goal is to save your home, pursue a loan modification, or buy time while planning your next steps, we develop a legal strategy built around your unique circumstances.",
-            "We serve homeowners across Miami-Dade, Broward, and Palm Beach counties and are equally comfortable in state court, federal court, and bankruptcy proceedings. You do not have to face foreclosure alone — the earlier you contact us, the more options you have.",
+          heroSub:
+            "Personalized strategy. Open communication. Two decades of experience on your side.",
+          intro:
+            "When it comes to foreclosure or negotiating a workout with the bank, it can feel like your whole world is closing in. Receiving notice that your lender is trying to foreclose on your home is overwhelming. We help you navigate through the system and find the best solution for you and your family.",
+          body: [
+            "Every case and every client is different — individualized legal strategy works best. A foreclosure action can affect the future of a homeowner because of the possible negative consequences. It is important to obtain legal representation to protect your rights, understand your options and ensure the best possible outcome.",
+            "We help if you have been sued by your lender, bank, HOA, and/or condominium association. We can sit down with you to discuss and define an action plan, legal strategy, and walk you through the process.",
           ],
-          howWeHelp: [
-            "Review and challenge improper foreclosure filings and documentation",
-            "Negotiate loan modifications and repayment plans with lenders",
-            "Assert affirmative defenses based on lender misconduct or procedural errors",
-            "Represent clients in foreclosure mediations and court hearings",
-          ],
-          whatToExpect:
-            "After your free consultation, we will review the relevant documents and explain your options honestly. If you choose to retain us, we file responsive pleadings, conduct discovery, and advocate on your behalf at every stage. We keep you informed throughout and are always available to answer your questions.",
+          services: {
+            heading: "What We Can Help With",
+            items: [
+              "Defending against bank and lender foreclosure lawsuits",
+              "HOA and condominium association foreclosure actions",
+              "Loan modification negotiation and assistance",
+              "Mortgage dispute resolution",
+              "Short sale guidance and alternatives to foreclosure",
+              "Defending against deficiency judgments",
+              "Challenging standing and proper documentation of the foreclosing party",
+              "Protection of homeowner rights throughout the legal process",
+            ],
+          },
+          approach: {
+            eyebrow: "— OUR APPROACH",
+            heading: "Why You Need a Foreclosure Defense Attorney",
+            body: "Foreclosure is a complex legal process with strict timelines and procedures. Without proper legal representation, homeowners may miss critical deadlines or overlook defenses that could save their home. Lenders and their attorneys are experienced in this process — you deserve someone equally experienced on your side. Attorney Rosalind Matos has spent years in foreclosure defense, first at Legal Aid Service of Broward County helping low-income families, then managing an entire foreclosure department, and now at her own firm where she brings that same dedication to every client. Free phone consultation available.",
+          },
         },
       },
       {
@@ -79,19 +92,32 @@ export const content = {
         desc: "Representing clients in all stages of civil litigation from business to personal disputes.",
         slug: "civil-litigation",
         detail: {
-          overview: [
-            "Civil litigation encompasses a broad spectrum of legal disputes — from business contract disagreements and property conflicts to consumer protection claims and landlord-tenant matters. Matos Legal, PLLC brings over two decades of trial and appellate court experience to every case, ensuring your interests are robustly represented at every stage of the process.",
-            "We represent both individuals and businesses in South Florida courts. Our approach is strategic: before pursuing litigation, we assess whether negotiation, mediation, or arbitration may resolve the dispute more efficiently. When litigation is warranted, we proceed with precision and resolve.",
-            "Attorney Matos has a deep background in state and federal civil proceedings and understands how to build the record necessary to prevail at trial and protect the client's position on appeal.",
+          heroSub:
+            "Strategic advocacy from negotiation through trial. Your dispute, handled with precision.",
+          intro:
+            "Civil litigation covers a broad spectrum of disputes — from business contract breaches and property conflicts to consumer protection claims and landlord-tenant matters. At Matos Legal, PLLC, we represent both individuals and businesses in South Florida courts with precision and resolve.",
+          body: [
+            "Our approach begins with a candid assessment of your matter — the strengths, the weaknesses, and the realistic range of outcomes. We evaluate whether negotiation, mediation, or arbitration can efficiently resolve the dispute before committing to the costs of full litigation.",
+            "When litigation is warranted, Attorney Matos builds the record strategically, from pleadings through discovery, hearings, and trial. Her background in state and federal civil practice means your matter is handled by someone who understands the process at every level.",
           ],
-          howWeHelp: [
-            "Evaluate the merits of your claim and develop a litigation strategy",
-            "Draft and file complaints, motions, and pleadings",
-            "Conduct thorough discovery including depositions and document review",
-            "Represent clients at mediation, hearings, trial, and appeal",
-          ],
-          whatToExpect:
-            "We begin with a candid assessment of your case — including realistic outcomes and costs. From there, we handle all aspects of litigation so you can focus on your life or business. We communicate proactively and ensure you understand every development in your matter.",
+          services: {
+            heading: "What We Can Help With",
+            items: [
+              "Business contract disputes and breach of contract claims",
+              "Property disputes, including boundary and title issues",
+              "Consumer protection and unfair trade practices",
+              "Landlord-tenant litigation",
+              "Debt collection defense",
+              "Commercial and residential lease disputes",
+              "Collections and judgment enforcement",
+              "Pre-litigation negotiation and demand letters",
+            ],
+          },
+          approach: {
+            eyebrow: "— OUR APPROACH",
+            heading: "Strategy First. Litigation When Necessary.",
+            body: "Not every dispute requires a courtroom. We begin by evaluating all available paths — negotiation, mediation, and arbitration — because resolving disputes efficiently saves our clients time, money, and stress. When litigation is the right move, we pursue it with precision. Attorney Matos has handled civil matters from initial complaint through trial and appeal in both state and federal courts, ensuring your interests are protected at every stage.",
+          },
         },
       },
       {
@@ -101,19 +127,32 @@ export const content = {
         desc: "Pursuing justice for those injured due to negligence with compassion and dedication.",
         slug: "personal-injury",
         detail: {
-          overview: [
-            "When you or a loved one suffers an injury due to someone else's negligence, the physical, emotional, and financial impact can be devastating. Matos Legal, PLLC advocates for injured individuals in South Florida, working to recover fair compensation so you can focus on healing.",
-            "We handle cases arising from automobile accidents, slip and fall incidents, premises liability, and other negligence-based injuries. Our firm investigates each case thoroughly, collaborating with medical professionals and accident reconstruction experts when necessary to build the strongest possible claim.",
-            "We handle personal injury cases on a contingency basis — meaning you pay no attorney fees unless we recover for you. Your recovery is our priority.",
+          heroSub:
+            "No fees unless we recover. Full dedication to your case from day one.",
+          intro:
+            "When you or a loved one is injured due to someone else's negligence, everything can change in an instant. Medical bills accumulate, income stops, and the insurance company starts looking out for its own interests — not yours. Attorney Rosalind J. Matos is on your side from the moment you call.",
+          body: [
+            "We handle personal injury cases arising from automobile accidents, premises liability, slip and fall incidents, and other negligence-based injuries throughout South Florida. Our firm investigates each case thoroughly, working with medical providers and accident reconstruction specialists when necessary to build the strongest possible claim.",
+            "Personal injury cases are handled on a contingency fee basis — you pay no attorney fees unless we recover compensation for you. We advance all case costs and are compensated only when we win.",
           ],
-          howWeHelp: [
-            "Investigate the accident, gather evidence, and preserve witness testimony",
-            "Coordinate with medical providers to document your injuries accurately",
-            "Negotiate assertively with insurance companies for fair settlements",
-            "Take your case to trial when insurers refuse to offer just compensation",
-          ],
-          whatToExpect:
-            "Your free consultation is confidential and carries no obligation. We will explain the personal injury claims process, assess the value of your case, and outline next steps. If we move forward together, we handle every aspect of your claim so you can concentrate on recovery.",
+          services: {
+            heading: "What We Can Help With",
+            items: [
+              "Automobile accidents and car crash claims",
+              "Slip and fall and premises liability",
+              "Negotiating with insurance companies",
+              "Documenting injuries and medical treatment",
+              "Pursuing lost wages and future income claims",
+              "Pain and suffering damages",
+              "Wrongful death claims",
+              "Trial representation when insurers refuse fair offers",
+            ],
+          },
+          approach: {
+            eyebrow: "— OUR APPROACH",
+            heading: "Your Recovery Is Our Priority",
+            body: "Insurance companies have teams of adjusters and attorneys whose job is to minimize what they pay you. Our job is the opposite — to maximize your recovery and ensure every element of your damages is properly documented, valued, and pursued. We handle everything from investigation through settlement or trial so you can focus on what matters most: getting better.",
+          },
         },
       },
       {
@@ -123,19 +162,32 @@ export const content = {
         desc: "Defending civil liberties and constitutional rights with experience and conviction.",
         slug: "civil-rights",
         detail: {
-          overview: [
-            "Civil rights violations — including police misconduct, racial profiling, unlawful detention, and infringements on free speech or religious freedom — demand a fearless advocate. Attorney Rosalind J. Matos began her legal career as South Florida Staff Counsel for the ACLU of Florida, where she spent nearly eight years litigating federal civil rights cases.",
-            "That foundation informs everything we do in civil rights matters. We understand the constitutional framework, the procedural landscape of federal civil rights litigation under Section 1983, and the importance of building a thorough, well-documented record. We take these cases seriously because your rights matter.",
-            "We represent individuals and communities whose constitutional and civil rights have been violated by government actors, law enforcement agencies, and institutions.",
+          heroSub:
+            "Constitutional rights defended with conviction. Two decades of civil liberties experience.",
+          intro:
+            "Civil rights violations — police misconduct, racial profiling, unlawful detention, and infringements on free speech or religious freedom — require a lawyer who understands both the law and the stakes. Attorney Rosalind J. Matos spent nearly eight years as South Florida Staff Counsel for the ACLU of Florida before founding Matos Legal, PLLC.",
+          body: [
+            "That foundation — litigating federal civil rights cases, testifying before legislative committees, serving on the Miami-Dade Racial Profiling Advisory Board — informs every civil rights matter we take. We understand Section 1983, qualified immunity doctrine, and the evidentiary standards that determine whether a case survives to trial.",
+            "We represent individuals and communities whose constitutional rights have been violated by law enforcement agencies, government officials, and institutions. These cases are challenging, but they matter — and we pursue them with the conviction they deserve.",
           ],
-          howWeHelp: [
-            "Evaluate claims of police misconduct, excessive force, and unlawful search or seizure",
-            "File civil rights complaints in state and federal court including Section 1983 actions",
-            "Pursue injunctive relief and damages on behalf of aggrieved individuals",
-            "Collaborate with advocacy organizations and community groups on systemic issues",
-          ],
-          whatToExpect:
-            "Civil rights cases require careful factual investigation and precise legal strategy. We begin by understanding exactly what happened, reviewing any available evidence, and assessing viability. We are straightforward about the challenges these cases present and committed to pursuing justice where a viable claim exists.",
+          services: {
+            heading: "What We Can Help With",
+            items: [
+              "Police misconduct and excessive force claims",
+              "Racial and ethnic profiling",
+              "Unlawful arrest and false imprisonment",
+              "First Amendment — free speech and religious freedom violations",
+              "Fourth Amendment — unlawful search and seizure",
+              "Section 1983 civil rights actions in federal court",
+              "Injunctive relief to stop ongoing constitutional violations",
+              "Advocacy in collaboration with civil liberties organizations",
+            ],
+          },
+          approach: {
+            eyebrow: "— OUR APPROACH",
+            heading: "Civil Rights Cases Require Fearless Advocacy",
+            body: "These cases are complex, often involving qualified immunity and other governmental defenses. We begin with a careful factual investigation, reviewing all available evidence before advising on viability. When the facts support a claim, we pursue it with precision and conviction — in state court, federal court, and in the public record. Attorney Matos's eight years at the ACLU means you have someone in your corner who has been fighting these battles for a long time.",
+          },
         },
       },
     ],
@@ -204,6 +256,16 @@ export const content = {
     ctaPrimary: "Schedule Now",
     ctaSecondary: "954-531-5658",
   },
+  practiceDetailCta: {
+    headlineStart: "Need",
+    headlineAccent: "Legal Help",
+    headlineEnd: "?",
+    sub: "Contact us today for a free phone consultation. No obligation — just clear answers.",
+    cta: "Contact Us",
+    phone: "954-531-5658",
+  },
+  exploreMore: "Other Practice Areas",
+  learnMore: "Learn More",
   attorney: {
     badge: "FOUNDER & OWNER",
     headlineStart: "Meet",
@@ -253,25 +315,38 @@ export const content = {
   },
   contact: {
     eyebrow: "— GET IN TOUCH",
-    headlineStart: "Let's",
-    headlineAccent: "Talk",
+    headlineStart: "Contact",
+    headlineAccent: "Matos Legal",
     subhead:
-      "Whatever you are facing, the first step is a free, honest conversation. In English or in Spanish.",
+      "Free phone consultation. No obligation. Just clear answers and honest guidance.",
     address:
       "Lakeside Executive Suites, 2645 Executive Park Drive, Ste. 676, Weston FL 33331",
+    formCard: {
+      eyebrow: "— FREE CONSULTATION",
+      headlineStart: "Send Us A",
+      headlineAccent: "Message",
+      sub: "Fill out this form to arrange a FREE phone consultation. We look forward to hearing from you!",
+    },
+    reachUs: {
+      eyebrow: "— REACH US",
+      heading: "Get In Touch",
+      office: "OFFICE",
+      phoneLabel: "PHONE",
+      emailLabel: "EMAIL",
+    },
     formTitle: "Send Us a Message",
     formFields: {
+      name: "Name",
       firstName: "First Name",
       lastName: "Last Name",
       email: "Email Address",
       phone: "Phone Number",
       matter: "Matter Type",
-      message: "Brief Description",
-      submit: "Send Message",
+      message: "Message",
+      submit: "Submit",
       disclaimer:
         "Submitting this form does not create an attorney-client relationship. No guarantee of a particular outcome is made or implied.",
-      success:
-        "Thank you! We'll be in touch within one business day.",
+      success: "Thank you! We'll be in touch within one business day.",
       matters: [
         "Foreclosure Defense",
         "Civil Litigation",
@@ -282,11 +357,44 @@ export const content = {
     },
   },
   resources: {
-    eyebrow: "— RESOURCES",
+    eyebrow: "— HELPFUL LINKS",
     headlineStart: "Legal",
     headlineAccent: "Resources",
-    coming: "We are working on a library of helpful legal resources for South Florida residents. Check back soon.",
-    ctaText: "In the meantime, contact us to speak directly with Attorney Matos.",
+    subhead:
+      "Court records, property appraisers, and trusted legal organizations across South Florida.",
+    categories: [
+      {
+        num: "01",
+        icon: "landmark",
+        title: "Court & Property Records",
+        links: [
+          { label: "Broward Court Public Case Search", url: "https://www.browardclerk.org/" },
+          { label: "Broward County Property Appraiser", url: "https://www.bcpa.net/" },
+          { label: "Broward County Official Records Search", url: "https://officialrecords.broward.org/" },
+          { label: "Miami-Dade Court Case Search", url: "https://www.miami-dadeclerk.com/" },
+          { label: "Miami-Dade County Property Appraiser", url: "https://www.miamidade.gov/pa/" },
+          { label: "Miami-Dade Official Records Search", url: "https://onlineservices.miami-dadeclerk.com/" },
+          { label: "Palm Beach Court Records", url: "https://www.mypalmbeachclerk.com/" },
+          { label: "Palm Beach County Property Appraiser", url: "https://pbcpao.gov/" },
+          { label: "Palm Beach Official Records", url: "https://or.pbcgov.com/" },
+        ],
+      },
+      {
+        num: "02",
+        icon: "book-open",
+        title: "Legal Organizations",
+        links: [
+          { label: "Florida Statutes Online", url: "https://www.leg.state.fl.us/statutes/" },
+          { label: "The Florida Bar", url: "https://www.floridabar.org/" },
+          { label: "Third District Court of Appeal", url: "https://3dca.flcourts.org/" },
+          { label: "Fourth District Court of Appeal", url: "https://4dca.flcourts.org/" },
+          { label: "Legal Aid Service of Broward County", url: "https://legalaid.org/" },
+          { label: "Legal Services of Greater Miami", url: "https://www.lsgmi.org/" },
+          { label: "Legal Aid Society of Palm Beach County", url: "https://www.legalaidpbc.org/" },
+          { label: "Florida Attorney General", url: "https://myfloridalegal.com/" },
+        ],
+      },
+    ],
   },
   footer: {
     blurb:

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { useLocale } from "@/components/LocaleProvider";
+import { Logo } from "./Logo";
 
 export function Footer() {
   const { t, locale } = useLocale();
@@ -21,9 +22,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <span className="block font-display font-medium text-xl tracking-tight mb-1">
-              MATOS <span className="text-[var(--red)]">LEGAL</span> PLLC
-            </span>
+            <Logo size="sm" inverted className="mb-3" />
             <p className="text-white/50 text-sm leading-relaxed mt-3 max-w-xs">
               {t.footer.blurb}
             </p>

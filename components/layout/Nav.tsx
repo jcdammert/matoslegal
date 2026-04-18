@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useLocale } from "@/components/LocaleProvider";
 import { LanguageToggle } from "./LanguageToggle";
+import { Logo } from "./Logo";
 import { Button } from "@/components/primitives/Button";
 import { cn } from "@/lib/utils";
 
@@ -44,14 +45,7 @@ export function Nav() {
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 h-[72px] flex items-center justify-between">
         {/* Logo */}
-        <Link href={`/${locale}`} className="flex-shrink-0">
-          <span className="font-display font-medium text-xl text-[var(--charcoal)] tracking-tight">
-            MATOS <span className="text-[var(--red)]">LEGAL</span>
-          </span>
-          <span className="block text-[9px] tracking-[0.25em] uppercase text-[var(--text-muted)] font-body -mt-0.5">
-            PLLC
-          </span>
-        </Link>
+        <Logo href={`/${locale}`} />
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-7">

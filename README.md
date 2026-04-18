@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Matos Legal, PLLC — Website
 
-## Getting Started
+Bilingual (EN/ES) Next.js 14 website for Matos Legal, PLLC, a South Florida civil litigation firm.
 
-First, run the development server:
+## Setup
 
 ```bash
+npm install
+cp .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — the middleware will redirect to `/en` or `/es` based on your browser language.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Description |
+|---|---|
+| `GHL_WEBHOOK_URL` | GoHighLevel webhook URL for lead form POST submissions |
 
-## Learn More
+## Swapping the GHL Form Embed
 
-To learn more about Next.js, take a look at the following resources:
+The contact form in `components/sections/ContactForm.tsx` is a fallback form that POSTs to `/api/lead`. Once your GHL form is built:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Open `components/sections/ContactForm.tsx`
+2. Replace the entire form JSX with your GHL iframe embed
+3. The TODO comment at the top of that file marks the exact location
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```tsx
+// TODO: Replace this component with GHL native form embed iframe
+// once form is built in GHL dashboard. Keep fallback working until then.
+```
 
-## Deploy on Vercel
+## Adding / Editing Content
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+All text content lives in two files:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `content/en.ts` — English
+- `content/es.ts` — Spanish
+
+Both files share the same TypeScript type (`Content` from `content/en.ts`). Edit the values; the site auto-reloads in dev and redeployment picks up changes in production.
+
+## Deploying
+
+### Vercel (recommended)
+
+Connect your GitHub repo in the Vercel dashboard. Set `GHL_WEBHOOK_URL` in Vercel:
+Project → Settings → Environment Variables.
+
+Or via CLI:
+
+```bash
+npm run build   # verify zero errors first
+vercel --prod
+```
+
+## Project Structure
+
+```
+app/[locale]/          Pages (home, attorney-profile, practice-areas, contact, resources)
+components/layout/     Nav, TopBar, Footer, LanguageToggle
+components/sections/   Page sections (Hero, AboutFirm, Testimonials, etc.)
+components/primitives/ Reusable atoms (Button, IconCard, SectionHeading, etc.)
+content/               en.ts + es.ts — all copy
+lib/                   i18n helpers, utils
+middleware.ts          Locale detection & redirect
+```

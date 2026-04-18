@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='1000' viewBox='0 0 800 1000'>
+  <rect width='800' height='1000' fill='#f2ede4'/>
+  <rect x='320' y='180' width='160' height='160' rx='80' fill='#e5e3df'/>
+  <rect x='250' y='380' width='300' height='220' rx='20' fill='#e5e3df'/>
+  <text x='400' y='680' text-anchor='middle' fill='#6b6f76' font-family='Arial,sans-serif' font-size='18'>Portrait — Coming Soon</text>
+  <text x='400' y='710' text-anchor='middle' fill='#6b6f76' font-family='Arial,sans-serif' font-size='14'>Rosalind J. Matos</text>
+</svg>

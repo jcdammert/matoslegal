@@ -7,6 +7,8 @@ import {
   Scale,
   Users,
   Gavel,
+  ArrowRight,
+  Check,
   type LucideIcon,
 } from "lucide-react";
 import { TopBar } from "@/components/layout/TopBar";
@@ -15,8 +17,6 @@ import { Footer } from "@/components/layout/Footer";
 import { CtaBlock } from "@/components/sections/CtaBlock";
 import { EyebrowLabel } from "@/components/primitives/EyebrowLabel";
 import { SectionHeading } from "@/components/primitives/SectionHeading";
-import { Button } from "@/components/primitives/Button";
-import { RevealOnScroll } from "@/components/primitives/RevealOnScroll";
 
 const iconMap: Record<string, LucideIcon> = {
   shield: Shield,
@@ -53,15 +53,23 @@ export default async function PracticeAreasPage({
   if (!isValidLocale(locale)) notFound();
   const t = getDictionary(locale as Locale);
   const p = t.practice;
+  const learnMore = locale === "es" ? "Ver Más" : "Learn More";
 
   return (
     <>
       <TopBar />
       <Nav />
       <main>
-        {/* Header */}
-        <section className="bg-[var(--charcoal)] py-24 md:py-32">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center">
+        {/* Hero */}
+        <section className="relative bg-[var(--charcoal)] py-28 md:py-40 overflow-hidden">
+          {/* decorative large text */}
+          <span
+            aria-hidden
+            className="absolute right-0 top-1/2 -translate-y-1/2 select-none pointer-events-none font-display font-medium text-[22vw] leading-none text-white/[0.03] whitespace-nowrap pr-8"
+          >
+            LAW
+          </span>
+          <div className="relative max-w-[1400px] mx-auto px-6 md:px-12 text-center">
             <EyebrowLabel light className="mb-5">{p.eyebrow}</EyebrowLabel>
             <SectionHeading
               start={p.headlineStart}
@@ -69,42 +77,99 @@ export default async function PracticeAreasPage({
               end={p.headlineEnd}
               light
               centered
-              className="mb-5"
+              className="mb-6"
             />
-            <p className="text-white/60 max-w-xl mx-auto leading-relaxed">
+            <p className="text-white/55 max-w-lg mx-auto leading-relaxed text-lg">
               {p.subhead}
             </p>
           </div>
         </section>
 
-        {/* Alternating rows */}
+        {/* Practice area sections */}
         {p.areas.map((area, i) => {
           const Icon = iconMap[area.icon] ?? Shield;
-          const bg = i % 2 === 0 ? "bg-[var(--cream)]" : "bg-white";
+          const flip = i % 2 !== 0;
+          const previewItems = area.detail.services.items.slice(0, 4);
+
           return (
-            <section key={area.slug} className={`${bg} py-20 md:py-28`}>
-              <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-                <RevealOnScroll>
-                  <div className="max-w-3xl">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-12 h-12 rounded-md bg-[var(--red)] flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-5 h-5 text-white" />
+            <section
+              key={area.slug}
+              className="relative overflow-hidden border-b border-[var(--hairline)] last:border-b-0"
+            >
+              {/* Ghost numeral */}
+              <span
+                aria-hidden
+                className="absolute top-1/2 -translate-y-1/2 select-none pointer-events-none font-display font-medium leading-none text-[var(--charcoal)]/[0.04] text-[20vw]"
+                style={{ [flip ? "left" : "right"]: "-2vw" }}
+              >
+                {area.num}
+              </span>
+
+              <div
+                className={`relative max-w-[1400px] mx-auto px-6 md:px-12 py-20 md:py-28 grid md:grid-cols-2 gap-12 md:gap-20 items-center ${
+                  flip ? "md:[direction:rtl]" : ""
+                }`}
+              >
+                {/* Content side */}
+                <div className={flip ? "[direction:ltr]" : ""}>
+                  {/* Number + icon row */}
+                  <div className="flex items-center gap-5 mb-8">
+                    <div className="relative">
+                      <div className="w-14 h-14 rounded-xl bg-[var(--red)] flex items-center justify-center shadow-lg shadow-red-900/20">
+                        <Icon className="w-6 h-6 text-white" />
                       </div>
-                      <span className="font-display italic text-[var(--burgundy)] text-xl font-medium">
-                        {area.num}
-                      </span>
                     </div>
-                    <h2 className="font-display text-3xl md:text-4xl font-medium text-[var(--charcoal)] mb-4">
-                      {area.title}
-                    </h2>
-                    <p className="text-[var(--text-muted)] leading-relaxed text-lg mb-6">
-                      {area.desc}
-                    </p>
-                    <Button href={`/${locale}/practice-areas/${area.slug}`} variant="primary">
-                      {locale === "es" ? "Agendar Consulta Gratis" : "Schedule Free Consultation"}
-                    </Button>
+                    <span className="font-display italic text-[var(--burgundy)] text-3xl font-medium opacity-60">
+                      {area.num}
+                    </span>
                   </div>
-                </RevealOnScroll>
+
+                  <h2 className="font-display text-4xl md:text-5xl font-medium text-[var(--charcoal)] mb-5 leading-tight">
+                    {area.title}
+                  </h2>
+                  <p className="text-[var(--text-muted)] leading-relaxed text-lg mb-8 max-w-lg">
+                    {area.desc}
+                  </p>
+
+                  <Link
+                    href={`/${locale}/practice-areas/${area.slug}`}
+                    className="group inline-flex items-center gap-3 text-[var(--red)] font-body font-medium text-sm tracking-[0.1em] uppercase transition-colors hover:text-[var(--red-hover)]"
+                  >
+                    {learnMore}
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border border-[var(--red)]/40 group-hover:border-[var(--red)] group-hover:bg-[var(--red)] group-hover:text-white transition-all duration-200">
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </span>
+                  </Link>
+                </div>
+
+                {/* Visual side — services preview card */}
+                <div className={flip ? "[direction:ltr]" : ""}>
+                  <div className="relative rounded-2xl bg-[var(--cream)] border border-[var(--hairline)] p-8 md:p-10 overflow-hidden">
+                    {/* Red top accent line */}
+                    <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[var(--red)] to-[var(--burgundy)]" />
+
+                    <p className="eyebrow mb-6">{area.detail.services.heading}</p>
+                    <ul className="space-y-4">
+                      {previewItems.map((item) => (
+                        <li key={item} className="flex items-start gap-3">
+                          <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-[var(--red)]/10 flex items-center justify-center">
+                            <Check className="w-3 h-3 text-[var(--red)]" />
+                          </span>
+                          <span className="text-[var(--text-muted)] text-sm leading-relaxed">
+                            {item}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {area.detail.services.items.length > 4 && (
+                      <p className="mt-5 text-xs text-[var(--text-muted)]/60 italic">
+                        +{area.detail.services.items.length - 4}{" "}
+                        {locale === "es" ? "más" : "more"}…
+                      </p>
+                    )}
+                  </div>
+                </div>
               </div>
             </section>
           );

@@ -12,6 +12,7 @@ import { Footer } from "@/components/layout/Footer";
 import { EyebrowLabel } from "@/components/primitives/EyebrowLabel";
 import { SectionHeading } from "@/components/primitives/SectionHeading";
 import { RevealOnScroll } from "@/components/primitives/RevealOnScroll";
+import { CtaBlock } from "@/components/sections/CtaBlock";
 
 const iconMap: Record<string, LucideIcon> = {
   landmark: Landmark,
@@ -145,6 +146,7 @@ export default function ResourcesPage({
             </div>
           </div>
         </section>
+        <CtaBlock />
       </main>
       <Footer />
     </LocaleProvider>

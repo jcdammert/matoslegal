@@ -13,6 +13,7 @@ import { EyebrowLabel } from "@/components/primitives/EyebrowLabel";
 import { SectionHeading } from "@/components/primitives/SectionHeading";
 import { RevealOnScroll } from "@/components/primitives/RevealOnScroll";
 import { ContactFormInner } from "@/components/sections/ContactFormInner";
+import { CtaBlock } from "@/components/sections/CtaBlock";
 
 const ease = [0.22, 0.61, 0.36, 1] as const;
 
@@ -200,6 +201,7 @@ export default function ContactPage({
             </div>
           </div>
         </section>
+        <CtaBlock />
       </main>
       <Footer />
     </LocaleProvider>

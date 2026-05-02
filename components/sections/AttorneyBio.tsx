@@ -13,20 +13,20 @@ export function AttorneyBio() {
   return (
     <section className="bg-white py-12 md:py-16">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start">
           {/* Photo card */}
-          <RevealOnScroll className="lg:col-span-2">
+          <RevealOnScroll className="lg:col-span-2 max-w-sm mx-auto w-full lg:max-w-none">
             <div className="relative">
               {/* Red corner accent */}
               <div className="absolute -top-3 -left-3 w-16 h-16 bg-[var(--red)] z-0" />
-              <div className="relative z-10 bg-[var(--cream-2)] aspect-[4/5] overflow-hidden rounded-sm">
-                {/* PLACEHOLDER — replace with real photo */}
+              <div className="relative z-10 bg-[var(--cream-2)] aspect-[3/4] overflow-hidden rounded-sm">
                 <Image
                   src="/images/rosalind-portrait.jpg"
                   alt={a.photoName}
                   fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  priority
+                  className="object-cover object-top"
+                  sizes="(max-width: 640px) 384px, (max-width: 1024px) 50vw, 560px"
                 />
               </div>
               <div className="mt-4 p-5 bg-[var(--charcoal)] text-white rounded-sm">

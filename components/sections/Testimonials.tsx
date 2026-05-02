@@ -28,9 +28,9 @@ export function Testimonials() {
   }, [go]);
 
   return (
-    <section className="bg-[var(--cream)] py-24 md:py-32">
+    <section className="bg-[var(--cream)] py-12 md:py-16">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <RevealOnScroll className="text-center mb-16 max-w-2xl mx-auto">
+        <RevealOnScroll className="text-center mb-8 max-w-2xl mx-auto">
           <EyebrowLabel className="mb-5">{t.testimonials.eyebrow}</EyebrowLabel>
           <SectionHeading
             start={t.testimonials.headlineStart}

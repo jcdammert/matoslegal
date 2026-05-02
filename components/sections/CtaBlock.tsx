@@ -11,7 +11,7 @@ export function CtaBlock() {
   const c = t.practiceDetailCta;
 
   return (
-    <section className="py-16 md:py-24 px-6 md:px-12">
+    <section className="py-12 md:py-16 px-6 md:px-12">
       <div className="max-w-[860px] mx-auto">
         <RevealOnScroll>
           <div

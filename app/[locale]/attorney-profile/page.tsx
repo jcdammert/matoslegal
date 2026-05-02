@@ -65,7 +65,7 @@ export default async function AttorneyProfilePage({
       <Nav />
       <main>
         {/* Header */}
-        <section className="bg-[var(--charcoal)] py-24 md:py-32">
+        <section className="bg-[var(--charcoal)] py-14 md:py-20">
           <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center max-w-2xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-[var(--red)]/20 text-[var(--red)] text-[11px] tracking-[0.2em] uppercase font-medium px-4 py-2 rounded-full mb-8">
               ⚖ {a.badge}

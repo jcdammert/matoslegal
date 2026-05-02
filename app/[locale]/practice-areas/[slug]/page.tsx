@@ -89,7 +89,7 @@ export default function PracticeAreaDetailPage({
       <Nav />
       <main>
         {/* ── Hero ──────────────────────────────────── */}
-        <section className="relative bg-[var(--charcoal)] pt-20 pb-28 md:pt-28 md:pb-36 overflow-hidden text-center">
+        <section className="relative bg-[var(--charcoal)] py-14 md:py-20 overflow-hidden text-center">
           {/* grid bg */}
           <div
             aria-hidden
@@ -141,7 +141,7 @@ export default function PracticeAreaDetailPage({
         </section>
 
         {/* ── Intro drop-cap ────────────────────────── */}
-        <section className="bg-[var(--cream)] py-20 md:py-28">
+        <section className="bg-[var(--cream)] py-12 md:py-16">
           <div className="max-w-[900px] mx-auto px-6 md:px-12">
             <RevealOnScroll>
               <p className="drop-cap text-[var(--text)] text-lg leading-relaxed mb-5">
@@ -157,7 +157,7 @@ export default function PracticeAreaDetailPage({
         </section>
 
         {/* ── Key Facts ─────────────────────────────────── */}
-        <section className="bg-white py-14 md:py-20">
+        <section className="bg-white py-12 md:py-16">
           <div className="max-w-[900px] mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {area.detail.keyFacts.map((fact, i) => (
@@ -174,7 +174,7 @@ export default function PracticeAreaDetailPage({
         </section>
 
         {/* ── Services checklist card ───────────────── */}
-        <section className="bg-[var(--cream)] pb-20 md:pb-28">
+        <section className="bg-[var(--cream)] py-12 md:py-16">
           <div className="max-w-[900px] mx-auto px-6 md:px-12">
             <RevealOnScroll>
               <div className="bg-white rounded-2xl border border-[var(--hairline)] p-8 md:p-12 shadow-sm">
@@ -203,7 +203,7 @@ export default function PracticeAreaDetailPage({
         </section>
 
         {/* ── Process ───────────────────────────────────── */}
-        <section className="bg-[var(--cream)] py-16 md:py-24">
+        <section className="bg-[var(--cream)] py-12 md:py-16">
           <div className="max-w-[900px] mx-auto px-6 md:px-12">
             <RevealOnScroll>
               <EyebrowLabel className="mb-4">— THE PROCESS</EyebrowLabel>
@@ -235,7 +235,7 @@ export default function PracticeAreaDetailPage({
         </section>
 
         {/* ── Approach ──────────────────────────────── */}
-        <section className="bg-white py-16 md:py-24">
+        <section className="bg-white py-12 md:py-16">
           <div className="max-w-[900px] mx-auto px-6 md:px-12">
             <RevealOnScroll>
               <EyebrowLabel className="mb-4">{area.detail.approach.eyebrow}</EyebrowLabel>
@@ -248,7 +248,7 @@ export default function PracticeAreaDetailPage({
         </section>
 
         {/* ── FAQ ──────────────────────────────────────── */}
-        <section className="bg-[var(--cream)] pb-16 md:pb-24">
+        <section className="bg-[var(--cream)] py-12 md:py-16">
           <div className="max-w-[900px] mx-auto px-6 md:px-12">
             <RevealOnScroll>
               <EyebrowLabel className="mb-4">— COMMON QUESTIONS</EyebrowLabel>
@@ -265,7 +265,7 @@ export default function PracticeAreaDetailPage({
         </section>
 
         {/* ── Inline CTA card ───────────────────────── */}
-        <section className="bg-white pb-16 md:pb-24">
+        <section className="bg-white py-12 md:py-16">
           <div className="max-w-[900px] mx-auto px-6 md:px-12">
             <RevealOnScroll>
               <div
@@ -313,7 +313,7 @@ export default function PracticeAreaDetailPage({
         </section>
 
         {/* ── Related practice areas ────────────────── */}
-        <section className="bg-[var(--cream)] py-16 md:py-24">
+        <section className="bg-[var(--cream)] py-12 md:py-16">
           <div className="max-w-[900px] mx-auto px-6 md:px-12">
             <RevealOnScroll>
               <EyebrowLabel className="mb-4">— {t.exploreMore.toUpperCase()}</EyebrowLabel>

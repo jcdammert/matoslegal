@@ -11,7 +11,7 @@ export function WhyChooseUs() {
   const w = t.why;
 
   return (
-    <section className="relative bg-[var(--charcoal)] py-24 md:py-32 overflow-hidden">
+    <section className="relative bg-[var(--charcoal)] py-12 md:py-16 overflow-hidden">
       {/* Subtle red radial top-left */}
       <div
         aria-hidden
@@ -20,7 +20,7 @@ export function WhyChooseUs() {
       />
 
       <div className="relative max-w-[1400px] mx-auto px-6 md:px-12">
-        <RevealOnScroll className="text-center mb-16 max-w-2xl mx-auto">
+        <RevealOnScroll className="text-center mb-8 max-w-2xl mx-auto">
           <EyebrowLabel light className="mb-5">{w.eyebrow}</EyebrowLabel>
           <SectionHeading
             start={w.headlineStart}

@@ -33,7 +33,7 @@ export default function ContactPage({
       <Nav />
       <main>
         {/* Header */}
-        <section className="relative bg-[var(--charcoal)] py-20 md:py-28 overflow-hidden">
+        <section className="relative bg-[var(--charcoal)] py-14 md:py-20 overflow-hidden">
           <div
             aria-hidden
             className="absolute inset-0 opacity-[0.04]"
@@ -76,7 +76,7 @@ export default function ContactPage({
         </section>
 
         {/* Two-column content */}
-        <section className="bg-[var(--cream)] py-16 md:py-24">
+        <section className="bg-[var(--cream)] py-12 md:py-16">
           <div className="max-w-[1400px] mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-8 items-start">
 

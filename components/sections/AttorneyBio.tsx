@@ -11,7 +11,7 @@ export function AttorneyBio() {
   const a = t.attorney;
 
   return (
-    <section className="bg-white py-24 md:py-32">
+    <section className="bg-white py-12 md:py-16">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
           {/* Photo card */}

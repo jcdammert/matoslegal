@@ -67,7 +67,7 @@ export default async function PracticeAreasPage({
       <Nav />
       <main>
         {/* Hero */}
-        <section className="relative bg-[var(--charcoal)] py-28 md:py-40 overflow-hidden">
+        <section className="relative bg-[var(--charcoal)] py-14 md:py-20 overflow-hidden">
           {/* decorative large text */}
           <span
             aria-hidden
@@ -112,7 +112,7 @@ export default async function PracticeAreasPage({
               </span>
 
               <div
-                className={`relative max-w-[1400px] mx-auto px-6 md:px-12 py-20 md:py-28 grid md:grid-cols-2 gap-12 md:gap-20 items-center ${
+                className={`relative max-w-[1400px] mx-auto px-6 md:px-12 py-12 md:py-16 grid md:grid-cols-2 gap-12 md:gap-16 items-center ${
                   flip ? "md:[direction:rtl]" : ""
                 }`}
               >

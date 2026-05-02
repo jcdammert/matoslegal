@@ -11,7 +11,7 @@ export function AboutFirm() {
   const a = t.about;
 
   return (
-    <section className="bg-[var(--cream)] py-24 md:py-32">
+    <section className="bg-[var(--cream)] py-12 md:py-16">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left */}

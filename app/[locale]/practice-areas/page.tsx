@@ -9,6 +9,9 @@ import {
   Gavel,
   ArrowRight,
   Check,
+  Building2,
+  Home,
+  Briefcase,
   type LucideIcon,
 } from "lucide-react";
 import { TopBar } from "@/components/layout/TopBar";
@@ -23,6 +26,9 @@ const iconMap: Record<string, LucideIcon> = {
   scale: Scale,
   users: Users,
   gavel: Gavel,
+  building: Building2,
+  home: Home,
+  briefcase: Briefcase,
 };
 
 export async function generateMetadata({

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Shield, Scale, Users, Gavel, Phone, CheckCircle2, ArrowRight,
+  Building2, Home, Briefcase,
   type LucideIcon,
 } from "lucide-react";
 import { getDictionary, isValidLocale, locales, type Locale } from "@/lib/i18n";
@@ -23,6 +24,9 @@ const iconMap: Record<string, LucideIcon> = {
   scale: Scale,
   users: Users,
   gavel: Gavel,
+  building: Building2,
+  home: Home,
+  briefcase: Briefcase,
 };
 
 const ease = [0.22, 0.61, 0.36, 1] as const;

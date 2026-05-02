@@ -1,11 +1,11 @@
 "use client";
 
-import { use } from "react";
+import { use, useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   Shield, Scale, Users, Gavel, Phone, CheckCircle2, ArrowRight,
-  Building2, Home, Briefcase,
+  Building2, Home, Briefcase, Plus,
   type LucideIcon,
 } from "lucide-react";
 import { getDictionary, isValidLocale, locales, type Locale } from "@/lib/i18n";
@@ -18,6 +18,44 @@ import { RevealOnScroll } from "@/components/primitives/RevealOnScroll";
 import { MagneticButton } from "@/components/primitives/MagneticButton";
 import { Button } from "@/components/primitives/Button";
 import { LocaleProvider } from "@/components/LocaleProvider";
+
+function FaqItem({ q, a, index }: { q: string; a: string; index: number }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.06, ease: [0.22, 0.61, 0.36, 1] }}
+      className="border border-[var(--hairline)] rounded-xl overflow-hidden bg-white"
+    >
+      <button
+        onClick={() => setOpen((o) => !o)}
+        className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+      >
+        <span className="font-display font-medium text-[var(--charcoal)] text-base leading-snug">{q}</span>
+        <span className={`flex-shrink-0 w-6 h-6 rounded-full border border-[var(--red)]/40 flex items-center justify-center transition-transform duration-200 ${open ? "rotate-45" : ""}`}>
+          <Plus className="w-3 h-3 text-[var(--red)]" />
+        </span>
+      </button>
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: [0.22, 0.61, 0.36, 1] }}
+            className="overflow-hidden"
+          >
+            <p className="px-6 pb-6 text-[var(--text-muted)] leading-relaxed text-sm border-t border-[var(--hairline)] pt-4">
+              {a}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}
 
 const iconMap: Record<string, LucideIcon> = {
   shield: Shield,
@@ -118,6 +156,23 @@ export default function PracticeAreaDetailPage({
           </div>
         </section>
 
+        {/* ── Key Facts ─────────────────────────────────── */}
+        <section className="bg-white py-14 md:py-20">
+          <div className="max-w-[900px] mx-auto px-6 md:px-12">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {area.detail.keyFacts.map((fact, i) => (
+                <RevealOnScroll key={i}>
+                  <div className="border-l-2 border-[var(--red)] pl-5">
+                    <p className="font-display text-3xl md:text-4xl font-medium text-[var(--charcoal)] mb-1">{fact.stat}</p>
+                    <p className="text-xs tracking-[0.15em] uppercase font-body font-medium text-[var(--red)] mb-2">{fact.label}</p>
+                    <p className="text-[var(--text-muted)] text-sm leading-relaxed">{fact.desc}</p>
+                  </div>
+                </RevealOnScroll>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── Services checklist card ───────────────── */}
         <section className="bg-[var(--cream)] pb-20 md:pb-28">
           <div className="max-w-[900px] mx-auto px-6 md:px-12">
@@ -147,6 +202,38 @@ export default function PracticeAreaDetailPage({
           </div>
         </section>
 
+        {/* ── Process ───────────────────────────────────── */}
+        <section className="bg-[var(--cream)] py-16 md:py-24">
+          <div className="max-w-[900px] mx-auto px-6 md:px-12">
+            <RevealOnScroll>
+              <EyebrowLabel className="mb-4">— THE PROCESS</EyebrowLabel>
+              <h2 className="font-display text-2xl md:text-3xl font-medium text-[var(--charcoal)] mb-10">
+                {area.detail.process.heading}
+              </h2>
+            </RevealOnScroll>
+            <div className="space-y-8">
+              {area.detail.process.steps.map((step, i) => (
+                <motion.div
+                  key={step.num}
+                  initial={{ opacity: 0, x: -16 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.08, ease }}
+                  className="flex gap-6"
+                >
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--red)] flex items-center justify-center">
+                    <span className="text-white text-xs font-body font-medium">{step.num}</span>
+                  </div>
+                  <div className="pt-1">
+                    <h3 className="font-display font-medium text-[var(--charcoal)] text-lg mb-2">{step.title}</h3>
+                    <p className="text-[var(--text-muted)] leading-relaxed text-sm">{step.body}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── Approach ──────────────────────────────── */}
         <section className="bg-white py-16 md:py-24">
           <div className="max-w-[900px] mx-auto px-6 md:px-12">
@@ -157,6 +244,23 @@ export default function PracticeAreaDetailPage({
               </h2>
               <p className="text-[var(--text)] leading-relaxed">{area.detail.approach.body}</p>
             </RevealOnScroll>
+          </div>
+        </section>
+
+        {/* ── FAQ ──────────────────────────────────────── */}
+        <section className="bg-[var(--cream)] pb-16 md:pb-24">
+          <div className="max-w-[900px] mx-auto px-6 md:px-12">
+            <RevealOnScroll>
+              <EyebrowLabel className="mb-4">— COMMON QUESTIONS</EyebrowLabel>
+              <h2 className="font-display text-2xl md:text-3xl font-medium text-[var(--charcoal)] mb-8">
+                {locale === "es" ? "Preguntas Frecuentes" : "Frequently Asked Questions"}
+              </h2>
+            </RevealOnScroll>
+            <div className="space-y-4">
+              {area.detail.faq.map((item, i) => (
+                <FaqItem key={i} q={item.q} a={item.a} index={i} />
+              ))}
+            </div>
           </div>
         </section>
 

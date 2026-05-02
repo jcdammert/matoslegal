@@ -83,6 +83,27 @@ export const content = {
             heading: "A Foreclosure Lawsuit Is Not the End",
             body: "We also represent clients who have been victims of unlawful foreclosure actions — where a lender has foreclosed without proper authority, in violation of a court order, or in contravention of an active loan modification agreement. We pursue affirmative claims for wrongful foreclosure and work to restore our clients' rights and, where applicable, recover damages. Attorney Matos began her career helping low-income families save their homes at Legal Aid Service of Broward County, then managed an entire foreclosure department — and now brings that same depth of experience to every client at Matos Legal.",
           },
+          keyFacts: [
+            { stat: "120 Days", label: "Florida's minimum pre-suit period", desc: "Before a lender can file foreclosure, specific notices must be sent — creating early opportunities for intervention." },
+            { stat: "5 Years", label: "Statute of limitations on mortgage actions", desc: "Expired limitations can be a complete defense — especially critical in zombie mortgage cases." },
+            { stat: "Free", label: "Initial phone consultation", desc: "We evaluate your case and your options before you commit to anything." },
+          ],
+          process: {
+            heading: "How Florida Foreclosure Defense Works",
+            steps: [
+              { num: "01", title: "You receive a notice or complaint", body: "You receive a default notice, a Notice of Lis Pendens, or are served with a foreclosure complaint. Do not ignore it — time is of the essence from day one." },
+              { num: "02", title: "We review and investigate", body: "We examine the mortgage, note, entire servicer history, and all communications to identify every available defense — from standing defects to RESPA violations." },
+              { num: "03", title: "We file an answer and assert defenses", body: "We file a comprehensive answer raising all viable defenses, potential counterclaims, and challenges to the lender's standing and legal compliance." },
+              { num: "04", title: "Discovery and motions practice", body: "We conduct discovery to expose servicer errors, assignment defects, and regulatory violations. We file motions to dismiss or for summary judgment where the facts support them." },
+              { num: "05", title: "Resolution", body: "Cases may resolve through trial, negotiated settlement, loan modification, or — in appropriate cases — dismissal. We pursue the best outcome available for your specific situation." },
+            ],
+          },
+          faq: [
+            { q: "Can I fight my foreclosure even if I missed payments?", a: "Yes. Florida is a judicial foreclosure state — the lender must sue you and prove its case in court. Even if payments were missed, lenders must comply with strict legal requirements: proper documentation of ownership, required pre-suit notices, and accurate accounting of the debt. Defenses based on procedural violations, servicer misconduct, and standing issues are real and frequently succeed." },
+            { q: "What does 'standing' mean in a foreclosure case?", a: "Standing means whether the party suing you actually has the legal right to do so. Mortgages are bought and sold constantly, and the paperwork trail is often incomplete or fraudulent. If the lender cannot prove it owns or holds your original note at the time it filed suit, it may lack standing — which can be a complete defense to the foreclosure." },
+            { q: "What is a zombie mortgage?", a: "A zombie mortgage is a dormant second mortgage from the 2008 financial crisis era that went silent for years — sometimes a decade or more — and is now being purchased by investors attempting to foreclose before statute of limitations issues can be raised. These cases have unique defenses including limitations arguments, lien abandonment, and chain-of-ownership challenges. If you have been contacted about an old second mortgage, call us immediately." },
+            { q: "If I have a loan modification in process, can the bank still foreclose?", a: "Pursuing foreclosure while simultaneously processing a borrower's loan modification application is known as 'dual tracking,' and it violates CFPB mortgage servicing rules as well as the implied duty of good faith. We pursue dual tracking violations aggressively — both as a defense and as an affirmative claim for damages. If your servicer is doing this to you, document every communication and call us." },
+          ],
         },
       },
       {
@@ -120,6 +141,27 @@ export const content = {
             heading: "Florida Eviction Law Is Strictly Procedural",
             body: "Florida's eviction procedures are time-sensitive and procedurally exacting. A landlord who skips a required step — or a tenant who misses a critical deadline — can lose important rights. We handle every procedural requirement correctly from the start, from drafting legally compliant pre-suit notices through prosecuting or defending an eviction action. Whether you are a residential tenant facing eviction or a commercial landlord enforcing a multi-page lease, we bring the same thoroughness and commitment to your matter.",
           },
+          keyFacts: [
+            { stat: "3 Days", label: "Required notice before filing for eviction", desc: "Nonpayment of rent requires a proper 3-day notice. Using the wrong form or method of service can invalidate your entire eviction and cost weeks." },
+            { stat: "15–30 Days", label: "Deadline to return a security deposit", desc: "Florida law imposes strict deadlines on landlords — missing them forfeits the right to make any deductions from the deposit." },
+            { stat: "Ch. 83", label: "Florida's Residential Landlord-Tenant Act", desc: "Both parties have specific statutory rights that courts enforce strictly — ignorance of the law is no defense in these proceedings." },
+          ],
+          process: {
+            heading: "How Florida Eviction Proceedings Work",
+            steps: [
+              { num: "01", title: "Serve the required pre-suit notice", body: "For nonpayment, Florida law requires a proper 3-day notice. For lease violations, a 7-day notice. The form, content, and method of service must comply strictly with Chapter 83 — any defect can restart the clock." },
+              { num: "02", title: "Wait for the cure period to expire", body: "The tenant has the right to cure certain violations or pay the outstanding rent within the notice period. If they comply, the grounds for eviction are eliminated and the process must restart if a new default occurs." },
+              { num: "03", title: "File the eviction complaint in county court", body: "If the tenant does not cure or vacate, the landlord files a complaint for eviction along with the required filing fees, the notice, and the lease. Any defect in these documents will delay the proceeding." },
+              { num: "04", title: "Serve the tenant with the complaint", body: "The tenant must be formally served with the eviction complaint. Florida allows personal service or posting-and-mailing for residential evictions. The method matters — improper service is a common defense." },
+              { num: "05", title: "Obtain judgment and writ of possession", body: "If the tenant does not file a response, a default is entered. If they respond, a hearing is scheduled. After the final judgment, a writ of possession is issued and the sheriff enforces the removal." },
+            ],
+          },
+          faq: [
+            { q: "Can a landlord change the locks or shut off utilities to remove a tenant?", a: "No. Florida law strictly prohibits 'self-help' evictions. A landlord who changes locks, removes doors or windows, shuts off utilities, or removes a tenant's belongings without a court order commits an unlawful act and can face civil liability for actual damages and attorney's fees. The only legal way to remove a tenant from a residential property is through the formal court process." },
+            { q: "What can a landlord legally deduct from a security deposit?", a: "A landlord may deduct for damage beyond normal wear and tear, unpaid rent, and cleaning necessary to restore the unit to its original condition. However, Florida law requires the landlord to send written notice of any intended deductions within 30 days of the tenant vacating (or 15 days if returning the full deposit). Failure to comply with these deadlines forfeits the landlord's right to make any deductions — and exposes them to liability for the full deposit plus attorney's fees." },
+            { q: "What is a CAM charge dispute in a commercial lease?", a: "CAM stands for Common Area Maintenance — charges commercial tenants pay on top of base rent to cover shared expenses like property taxes, insurance, parking lot maintenance, and building systems. Disputes arise when a landlord's calculations are inaccurate, include improper expenses, or fail to comply with audit rights provisions in the lease. These disputes can involve substantial sums and are among the most common sources of commercial lease litigation in South Florida." },
+            { q: "My landlord is retaliating against me for reporting a code violation. What are my rights?", a: "Florida law prohibits landlords from retaliating against tenants for: reporting housing code violations to a government agency, organizing with other tenants, complaining about habitability issues, or withholding rent lawfully due to the landlord's failure to maintain the unit. Retaliation can take the form of eviction notices, rent increases, or reduction of services. You have a defense to eviction and a potential affirmative claim for damages." },
+          ],
         },
       },
       {
@@ -157,6 +199,27 @@ export const content = {
             heading: "Real Estate Contracts Have Strict Deadlines",
             body: "Real estate contracts contain strict deadlines and notice requirements that can permanently affect your rights if missed. We move quickly when clients come to us with a real estate dispute — evaluating the contract, the parties' conduct, and applicable law before advising on a course of action. Whether the matter can be resolved through negotiation or requires a quiet title action or full litigation, we pursue the outcome that best protects your financial interests.",
           },
+          keyFacts: [
+            { stat: "Unique", label: "Every parcel of real property is legally unique", desc: "This makes specific performance — compelling the other party to complete the transaction — available in ways it is not for ordinary goods or services." },
+            { stat: "Strict", label: "Contract deadlines are strictly enforced", desc: "Missing a notice, contingency, or closing deadline in a Florida real estate contract can permanently waive your rights under that agreement." },
+            { stat: "Required", label: "Sellers must disclose known material defects", desc: "Florida's disclosure obligation applies even in AS-IS contracts — the AS-IS clause does not eliminate the seller's duty to disclose what they know." },
+          ],
+          process: {
+            heading: "How Real Estate Disputes Are Resolved",
+            steps: [
+              { num: "01", title: "Identify the breach and assess your position", body: "We review the contract, all correspondence, inspection reports, and closing documents to determine what went wrong, who bears responsibility, and what remedies are available under Florida law." },
+              { num: "02", title: "Send a formal demand", body: "Before filing suit, we typically send a formal demand letter identifying the breach, documenting your damages, and providing the other party an opportunity to resolve the matter — often the most cost-effective path." },
+              { num: "03", title: "Mediation (often required)", body: "Most Florida real estate contracts require mediation before litigation. We prepare thoroughly for mediation and use it as an opportunity to achieve the best possible outcome without the cost and uncertainty of a trial." },
+              { num: "04", title: "File suit if necessary", body: "If mediation fails, we file in circuit court. Real estate claims can include breach of contract, fraudulent misrepresentation, specific performance, rescission, and quiet title — often in the same lawsuit." },
+              { num: "05", title: "Trial or negotiated resolution", body: "Most cases settle before trial, often after the parties have seen the evidence through discovery. When they do not settle, Attorney Matos is prepared to try the case to a judge or jury." },
+            ],
+          },
+          faq: [
+            { q: "What is specific performance and when can I get it?", a: "Specific performance is a court order compelling a party to complete a real estate transaction as agreed. Because Florida law treats every parcel of real property as legally unique, courts will sometimes compel a seller to close — rather than simply awarding money damages. To obtain it, you must prove you were ready, willing, and able to close and that the other party unjustifiably refused. It is not automatic, but it is a powerful remedy when money alone is insufficient." },
+            { q: "Does 'AS-IS' mean the seller doesn't have to tell me anything?", a: "No. The AS-IS designation in a Florida real estate contract means you are accepting the property in its current condition and waiving the right to ask for repairs. It does not eliminate the seller's obligation to disclose known material defects that are not readily observable. If a seller knew about a structural problem, water intrusion, or other significant issue and concealed it, they can be held liable for misrepresentation and fraud even in an AS-IS sale." },
+            { q: "What is a quiet title action and when do I need one?", a: "A quiet title action is a lawsuit filed in Florida circuit court asking the court to formally determine who owns a property and eliminate all competing or adverse claims. You may need one when: there are gaps or errors in the chain of title, a prior foreclosure may not have properly extinguished all interests, fraudulent deeds appear in the title history, an old lien or judgment was never properly released, or adverse possession is at issue. A completed quiet title action produces a court judgment that establishes clear, insurable title." },
+            { q: "What happens to the escrow deposit if the deal falls apart?", a: "It depends on why the deal fell through and what the contract says. If you properly exercised a valid contractual right to terminate — such as an inspection contingency, a financing contingency, or an AS-IS termination right — your deposit must be returned. If you walked away without a valid contractual basis, the seller may be entitled to retain the deposit as liquidated damages. When both sides claim the deposit, the escrow agent typically files an interpleader action and a court decides — which is why having an attorney early makes a significant difference." },
+          ],
         },
       },
       {
@@ -192,6 +255,27 @@ export const content = {
             heading: "Strategy First. Litigation When Necessary.",
             body: "Not every dispute requires a courtroom. We begin by evaluating all available paths — negotiation, mediation, and arbitration — because resolving disputes efficiently saves our clients time, money, and stress. When litigation is the right move, we pursue it with precision through every phase of the process. Attorney Matos has handled civil matters from initial complaint through trial and appeal in both state and federal courts, bringing a depth of experience that makes a real difference.",
           },
+          keyFacts: [
+            { stat: "5 Years", label: "Statute of limitations for breach of written contract", desc: "Missing this deadline permanently bars your claim — even a valid one. Acting promptly preserves all your options." },
+            { stat: "Pre-Suit", label: "Most disputes resolve before trial", desc: "Skilled pre-suit demand letters and negotiation frequently achieve results without the cost and disruption of full litigation." },
+            { stat: "Both", label: "We represent plaintiffs and defendants", desc: "Bringing a claim and defending one require entirely different strategies — we are experienced at both and choose the right approach for your situation." },
+          ],
+          process: {
+            heading: "How Civil Litigation Works in Florida",
+            steps: [
+              { num: "01", title: "Pre-suit evaluation and strategy", body: "We analyze the claim, identify all parties and claims, assess damages and defenses, and advise on the realistic range of outcomes and the most cost-effective path — whether that is demand, negotiation, mediation, or suit." },
+              { num: "02", title: "Demand letter and pre-suit negotiation", body: "We send formal demand letters and engage in pre-suit negotiation. Many disputes resolve at this stage because the other party understands we are serious and prepared to litigate." },
+              { num: "03", title: "Filing or responding to the complaint", body: "If the matter cannot be resolved, we file a complaint in the appropriate court — or answer one — asserting all available claims and defenses with precision." },
+              { num: "04", title: "Discovery", body: "Both sides exchange documents, answer interrogatories, and take depositions. Discovery is where cases are won and lost. We conduct thorough discovery and respond strategically to protect our clients." },
+              { num: "05", title: "Motions, mediation, and trial", body: "We file strategic motions, participate in court-ordered mediation, and — if the case does not settle — prepare aggressively for trial before a judge or jury in state or federal court." },
+            ],
+          },
+          faq: [
+            { q: "How do I know if I have a breach of contract claim?", a: "A breach of contract claim has four elements: (1) a valid contract existed; (2) you performed your obligations or had a valid excuse for not performing; (3) the other party failed to perform a material obligation under the contract; and (4) you suffered actual damages as a result. Both written and oral contracts can be enforced in Florida, though written contracts are easier to prove. If you believe someone has broken an agreement with you, call us — we can evaluate whether you have an actionable claim quickly." },
+            { q: "What is FDUTPA and how can it help me?", a: "Florida's Deceptive and Unfair Trade Practices Act (FDUTPA) prohibits unfair methods of competition and deceptive acts or practices in commerce. It applies broadly — to both consumers and businesses — and provides remedies including actual damages, attorney's fees, and injunctive relief. If a business has engaged in deceptive or unfair practices that caused you financial harm, FDUTPA may provide a powerful avenue for recovery beyond ordinary contract damages." },
+            { q: "What is the difference between compensatory damages, punitive damages, and equitable relief?", a: "Compensatory damages compensate you for actual financial losses caused by the other party. Punitive damages are awarded in cases of intentional misconduct or fraud — designed to punish and deter, and capped under Florida law. Equitable relief — including injunctions and specific performance — is available when money alone cannot adequately remedy the harm. Understanding which type of relief is available in your case is a critical part of our initial case evaluation." },
+            { q: "How long does civil litigation take in South Florida courts?", a: "A straightforward civil case in South Florida can take one to two years from filing to trial. Complex multi-party or commercial cases can take longer. Florida courts require mediation in most civil disputes, and many cases settle at mediation before trial. We will give you a realistic assessment of your case's timeline from our first conversation and keep you informed at every stage." },
+          ],
         },
       },
       {
@@ -229,6 +313,27 @@ export const content = {
             heading: "Non-Compete Disputes Move at Emergency Speed",
             body: "Employers frequently seek temporary restraining orders within days of an employee's departure — which means there is no time to delay. We respond quickly and forcefully to protect our clients on both sides of these disputes. Whether you are an employer trying to protect your business relationships and trade secrets or an employee whose livelihood is at stake, we provide the experienced, strategic representation these fast-moving matters demand.",
           },
+          keyFacts: [
+            { stat: "§ 542.335", label: "Florida's restrictive covenant statute", desc: "Florida law is significantly more favorable to non-compete enforcement than most states — courts must enforce reasonable agreements and can narrow (not strike) overly broad ones." },
+            { stat: "24–48 hrs", label: "How fast emergency injunctions can move", desc: "Employers can seek a temporary restraining order within days of an employee's departure. There is no time to delay — call us immediately." },
+            { stat: "Blue Pencil", label: "Florida courts can narrow — not strike — a non-compete", desc: "Even an overbroad non-compete may be partially enforced under Florida's blue-pencil doctrine. Employees should never assume an imperfect agreement is unenforceable." },
+          ],
+          process: {
+            heading: "How Non-Compete Disputes Unfold",
+            steps: [
+              { num: "01", title: "Departure triggers the dispute", body: "An employee leaves and accepts a position with a competitor, contacts former clients, or takes confidential information. The employer reviews the restrictive covenant and assesses its options." },
+              { num: "02", title: "Cease and desist or lawsuit filed", body: "The employer sends a cease and desist letter demanding the employee stop — or files directly for a temporary restraining order and preliminary injunction, sometimes within days of the departure." },
+              { num: "03", title: "Emergency TRO hearing", body: "Florida courts can hold an emergency hearing on a temporary restraining order in as little as 24-48 hours. We respond immediately — failing to appear or being unprepared at this stage can determine the entire outcome." },
+              { num: "04", title: "Preliminary injunction hearing", body: "A more formal evidentiary hearing follows, typically within 14 days. The court decides whether to maintain the injunction during the full litigation. This is often the most important proceeding in the entire case." },
+              { num: "05", title: "Resolution or full litigation", body: "Most non-compete cases settle after the injunction stage, once both sides have seen the evidence and assessed their risks. We negotiate from a position of strength — whether we are enforcing or defending." },
+            ],
+          },
+          faq: [
+            { q: "Are non-compete agreements enforceable in Florida?", a: "Yes — and more readily than in most other states. Under Florida Statute § 542.335, a court must enforce a non-compete if the employer proves it protects a legitimate business interest (trade secrets, substantial client relationships, or specialized training investment) and the restrictions are reasonable in time, geographic scope, and activity. Critically, Florida courts cannot refuse to enforce an agreement simply because enforcement seems harsh — they can only narrow it. This makes the initial drafting and the specific facts of the departure critically important." },
+            { q: "What is the 'blue pencil' doctrine?", a: "Under Florida law, if a court finds a non-compete overly broad in time, geographic scope, or activity restrictions, it must narrow the agreement to the extent necessary to make it enforceable — rather than striking it entirely. This is called the blue pencil doctrine. It means that even a poorly drafted non-compete is not automatically unenforceable. Employees challenging an agreement need to be prepared for the court to modify rather than eliminate the restriction." },
+            { q: "What constitutes a 'legitimate business interest' under Florida law?", a: "Florida Statute § 542.335 defines legitimate business interests to include: trade secrets; valuable confidential business or professional information; substantial relationships with specific prospective or existing customers; customer goodwill associated with a specific geographic area, trade area, or specific marketing approach; and extraordinary or specialized training. If the employer cannot identify a legitimate business interest, the non-compete cannot be enforced — regardless of what the agreement says." },
+            { q: "What are the main defenses to a non-compete enforcement action?", a: "Key defenses include: the agreement lacks a legitimate business interest to protect; the restrictions are unreasonable in time, scope, or geography; the employer materially breached the employment relationship; the agreement lacked adequate consideration at the time it was signed; the employer has unclean hands (engaged in misconduct itself); or the employer cannot prove actual violation of the agreement. We evaluate all available defenses and pursue the strategy most likely to succeed — or to produce a favorable, practical settlement." },
+          ],
         },
       },
       {
@@ -264,6 +369,27 @@ export const content = {
             heading: "Your Recovery Is Our Priority",
             body: "Insurance companies have teams of adjusters and attorneys whose job is to minimize what they pay you. Our job is the opposite — to maximize your recovery and ensure every element of your damages is properly documented, valued, and pursued. We handle everything from investigation through settlement or trial so you can focus on what matters most: getting better.",
           },
+          keyFacts: [
+            { stat: "2 Years", label: "Florida's statute of limitations for personal injury", desc: "The clock starts on the date of injury. Missing this deadline permanently bars your claim — no matter how strong it is." },
+            { stat: "No Fee", label: "No attorney fees unless we recover for you", desc: "We advance all case costs and are compensated only when we win. You have nothing to lose by calling." },
+            { stat: "$10,000", label: "Florida's PIP coverage limit", desc: "Florida's mandatory Personal Injury Protection covers initial medical costs regardless of fault — but it rarely covers the full extent of serious injuries." },
+          ],
+          process: {
+            heading: "How Your Personal Injury Case Works",
+            steps: [
+              { num: "01", title: "Seek medical attention immediately", body: "Your health comes first — and prompt medical documentation is essential for your case. A gap in treatment is the first thing insurance companies use to argue your injuries are not serious." },
+              { num: "02", title: "We investigate and preserve evidence", body: "We gather police reports, witness statements, surveillance footage, and expert opinions before critical evidence is lost. Early investigation makes a measurable difference in the strength of your case." },
+              { num: "03", title: "Document your treatment and damages", body: "We work with your medical providers to ensure all injuries are properly documented and connect your treatment directly to the accident. We also calculate lost wages, future care costs, and pain and suffering." },
+              { num: "04", title: "Demand package and negotiation", body: "Once you reach maximum medical improvement, we compile a comprehensive demand package and negotiate aggressively with the insurance company. Insurers treat attorneys differently than unrepresented claimants." },
+              { num: "05", title: "Settlement or trial", body: "If the insurer does not offer fair value for your injuries, we file suit and prepare for trial. Insurance companies know which attorneys are serious — and that knowledge changes what they offer." },
+            ],
+          },
+          faq: [
+            { q: "What should I do immediately after an accident?", a: "Call 911 and get a police report. Photograph everything — vehicles, the scene, your injuries, and any visible damage. Get contact information from all witnesses. Seek medical attention the same day or the next day at the latest, even if you feel okay — many injuries do not become apparent until 24 to 72 hours later. Do not give a recorded statement to the other driver's insurance company without speaking to an attorney first. That statement will be used against you." },
+            { q: "How is the value of my personal injury claim determined?", a: "Your claim's value depends on documented medical expenses (past and future), lost wages and diminished earning capacity, pain and suffering, permanent impairment or disability, and the clarity of the liability evidence. Insurance adjusters are trained to minimize these numbers. We evaluate every element from your perspective — to maximize what you recover — and we bring in expert witnesses where the evidence supports larger damages." },
+            { q: "What is comparative fault and how does it affect my recovery?", a: "Florida adopted a modified comparative fault rule in 2023. If you are found more than 50% at fault for the accident, you cannot recover damages. If you are 50% or less at fault, your recovery is reduced proportionally by your percentage of fault. Insurance companies routinely attempt to assign disproportionate blame to injured parties to reduce their exposure — we fight back against unfair fault allocations with evidence and expert testimony." },
+            { q: "Does Florida require PIP insurance, and what does it cover?", a: "Yes. Florida requires all drivers to carry Personal Injury Protection (PIP) insurance, which provides up to $10,000 in coverage for medical expenses and lost wages regardless of fault. However, PIP only covers 80% of medical expenses and 60% of lost wages up to the limit — and it does not cover pain and suffering. For injuries beyond what PIP covers, you may have a claim against the at-fault driver's liability insurance, and in some cases, your own uninsured/underinsured motorist coverage." },
+          ],
         },
       },
       {
@@ -299,6 +425,27 @@ export const content = {
             heading: "Experienced. Honest. Committed.",
             body: "These cases are complex, often involving qualified immunity and other governmental defenses. We begin with a careful factual investigation, reviewing all available evidence before advising on viability. When the facts support a claim, we pursue it with precision and conviction — in state court, federal court, and in the public record. Attorney Matos's eight years at the ACLU means you have someone in your corner who has been fighting these battles for a long time.",
           },
+          keyFacts: [
+            { stat: "§ 1983", label: "The federal statute for suing government officials", desc: "42 U.S.C. § 1983 allows individuals to sue state and local government actors for constitutional violations in federal court — often the most powerful forum for these claims." },
+            { stat: "~8 Years", label: "Attorney Matos's tenure at the ACLU of Florida", desc: "That experience — litigating federal civil rights cases, testifying before legislative committees, and serving on the Miami-Dade Racial Profiling Advisory Board — is the foundation of our civil rights practice." },
+            { stat: "Selective", label: "We accept only cases where we can make a real difference", desc: "We evaluate every civil rights inquiry honestly. If we cannot help, we will tell you — and point you toward the right organization or attorney." },
+          ],
+          process: {
+            heading: "How We Evaluate and Handle Civil Rights Cases",
+            steps: [
+              { num: "01", title: "Confidential consultation", body: "We listen to your account without judgment and review any documents, videos, or evidence you have. Everything you share is protected by attorney-client privilege — we encourage you to share everything." },
+              { num: "02", title: "Thorough factual investigation", body: "Civil rights cases turn on facts. We investigate thoroughly — reviewing official records, obtaining surveillance footage, interviewing witnesses, and analyzing all available evidence before advising on viability." },
+              { num: "03", title: "Legal analysis and honest assessment", body: "We identify the specific constitutional rights that were violated, assess the viability of the claims against likely defenses including qualified immunity, and give you an honest assessment — even if the answer is not what you hoped to hear." },
+              { num: "04", title: "Filing in the appropriate forum", body: "Civil rights cases under Section 1983 are typically filed in federal court. Some claims may also be brought in state court. Forum selection is a strategic decision we make carefully based on the specific facts and the relief sought." },
+              { num: "05", title: "Litigation and resolution", body: "Civil rights cases can resolve through settlement or trial. Some of the most important cases produce a judgment that creates precedent — protecting not just our client, but others facing the same conduct in the future." },
+            ],
+          },
+          faq: [
+            { q: "What is Section 1983 and who can be sued under it?", a: "42 U.S.C. § 1983 is the primary federal civil rights statute that allows individuals to sue state and local government officials — police officers, jail personnel, and other government employees — for violations of constitutional rights. You must prove the defendant was acting 'under color of state law' (in an official capacity) and that their conduct violated a specific constitutional right protected by the U.S. Constitution or federal law." },
+            { q: "What is qualified immunity and can it be overcome?", a: "Qualified immunity protects government officials from civil liability unless they violated a 'clearly established' constitutional right that a reasonable person in their position would have known. Courts apply this doctrine broadly, which makes civil rights litigation genuinely challenging. However, qualified immunity is not absolute — when the constitutional violation is clear, the facts are egregious, or there is existing case law that put the official on notice, it can be overcome. Attorney Matos has the experience to assess this realistically for your case." },
+            { q: "Can I sue the police department itself, or only the individual officer?", a: "You can sue individual officers and, in some circumstances, the municipality or government entity itself. Suing the entity requires proving that the constitutional violation was caused by an official policy, custom, or widespread practice — or by a deliberate failure to train or supervise. These claims, known as Monell claims after a landmark Supreme Court case, are more complex but can result in broader relief and institutional change." },
+            { q: "What damages are available in a civil rights case?", a: "Damages in Section 1983 cases can include: compensatory damages for physical injury, emotional distress, and financial harm; punitive damages against individual defendants who acted with malice or reckless disregard for your rights; and attorney's fees under the Civil Rights Attorney's Fees Awards Act, which allows successful plaintiffs to recover legal fees from the defendant. Injunctive relief — a court order requiring the government to change its policies or practices — may also be available and is sometimes the most meaningful outcome." },
+          ],
         },
       },
     ],

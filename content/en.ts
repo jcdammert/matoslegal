@@ -234,7 +234,7 @@ export const content = {
           intro:
             "We are, at our core, litigators. Civil litigation is the legal process by which individuals and businesses resolve disputes in court — seeking compensation for harm, enforcement of legal rights, or injunctive relief to stop wrongful conduct. At Matos Legal, we represent both plaintiffs and defendants in civil matters ranging from straightforward contract disputes to complex multi-party litigation.",
           body: [
-            "We handle every phase of the civil litigation process: pre-suit investigation and demand, filing or answering complaints, written and documentary discovery, depositions, expert witnesses, motions practice, mediation, trial, and — where necessary — appeal.",
+            "We handle every phase of the civil litigation process: pre-suit investigation and demand, filing or answering complaints, written and documentary discovery, depositions, qualified witnesses, motions practice, mediation, trial, and — where necessary — appeal.",
             "Our years of experience at the ACLU of Florida and in private civil practice across South Florida give us a breadth of perspective — and a strategic toolkit — that narrowly focused attorneys simply cannot match. No matter the nature of your dispute, our goal is the same: understand your situation thoroughly, advise you honestly, and pursue the best possible outcome with skill and determination.",
           ],
           services: {
@@ -378,7 +378,7 @@ export const content = {
             heading: "How Your Personal Injury Case Works",
             steps: [
               { num: "01", title: "Seek medical attention immediately", body: "Your health comes first — and prompt medical documentation is essential for your case. A gap in treatment is the first thing insurance companies use to argue your injuries are not serious." },
-              { num: "02", title: "We investigate and preserve evidence", body: "We gather police reports, witness statements, surveillance footage, and expert opinions before critical evidence is lost. Early investigation makes a measurable difference in the strength of your case." },
+              { num: "02", title: "We investigate and preserve evidence", body: "We gather police reports, witness statements, surveillance footage, and professional opinions before critical evidence is lost. Early investigation makes a measurable difference in the strength of your case." },
               { num: "03", title: "Document your treatment and damages", body: "We work with your medical providers to ensure all injuries are properly documented and connect your treatment directly to the accident. We also calculate lost wages, future care costs, and pain and suffering." },
               { num: "04", title: "Demand package and negotiation", body: "Once you reach maximum medical improvement, we compile a comprehensive demand package and negotiate aggressively with the insurance company. Insurers treat attorneys differently than unrepresented claimants." },
               { num: "05", title: "Settlement or trial", body: "If the insurer does not offer fair value for your injuries, we file suit and prepare for trial. Insurance companies know which attorneys are serious — and that knowledge changes what they offer." },
@@ -386,8 +386,8 @@ export const content = {
           },
           faq: [
             { q: "What should I do immediately after an accident?", a: "Call 911 and get a police report. Photograph everything — vehicles, the scene, your injuries, and any visible damage. Get contact information from all witnesses. Seek medical attention the same day or the next day at the latest, even if you feel okay — many injuries do not become apparent until 24 to 72 hours later. Do not give a recorded statement to the other driver's insurance company without speaking to an attorney first. That statement will be used against you." },
-            { q: "How is the value of my personal injury claim determined?", a: "Your claim's value depends on documented medical expenses (past and future), lost wages and diminished earning capacity, pain and suffering, permanent impairment or disability, and the clarity of the liability evidence. Insurance adjusters are trained to minimize these numbers. We evaluate every element from your perspective — to maximize what you recover — and we bring in expert witnesses where the evidence supports larger damages." },
-            { q: "What is comparative fault and how does it affect my recovery?", a: "Florida adopted a modified comparative fault rule in 2023. If you are found more than 50% at fault for the accident, you cannot recover damages. If you are 50% or less at fault, your recovery is reduced proportionally by your percentage of fault. Insurance companies routinely attempt to assign disproportionate blame to injured parties to reduce their exposure — we fight back against unfair fault allocations with evidence and expert testimony." },
+            { q: "How is the value of my personal injury claim determined?", a: "Your claim's value depends on documented medical expenses (past and future), lost wages and diminished earning capacity, pain and suffering, permanent impairment or disability, and the clarity of the liability evidence. Insurance adjusters are trained to minimize these numbers. We evaluate every element from your perspective — to maximize what you recover — and we bring in qualified witnesses where the evidence supports larger damages." },
+            { q: "What is comparative fault and how does it affect my recovery?", a: "Florida adopted a modified comparative fault rule in 2023. If you are found more than 50% at fault for the accident, you cannot recover damages. If you are 50% or less at fault, your recovery is reduced proportionally by your percentage of fault. Insurance companies routinely attempt to assign disproportionate blame to injured parties to reduce their exposure — we fight back against unfair fault allocations with evidence and specialist testimony." },
             { q: "Does Florida require PIP insurance, and what does it cover?", a: "Yes. Florida requires all drivers to carry Personal Injury Protection (PIP) insurance, which provides up to $10,000 in coverage for medical expenses and lost wages regardless of fault. However, PIP only covers 80% of medical expenses and 60% of lost wages up to the limit — and it does not cover pain and suffering. For injuries beyond what PIP covers, you may have a claim against the at-fault driver's liability insurance, and in some cases, your own uninsured/underinsured motorist coverage." },
           ],
         },
@@ -396,7 +396,7 @@ export const content = {
         num: "07",
         icon: "gavel",
         title: "Civil Rights Litigation",
-        desc: "Select civil rights and constitutional claims — handled with conviction and ACLU-trained expertise.",
+        desc: "Select civil rights and constitutional claims — handled with conviction and ACLU-trained dedication.",
         slug: "civil-rights",
         detail: {
           heroSub:
@@ -503,6 +503,16 @@ export const content = {
         quote:
           "It is fantastic to have an attorney with heart, with the experience, knowledge, patience and love that Dr. Rosalind Matos dedicates to her clients — or better said, to our family. When she takes a case, she becomes part of it. It's like having an attorney in your home at your disposal.",
         author: "JANET BAUTA",
+      },
+      {
+        quote:
+          "Mrs. Matos promptly returned every phone call, kept me informed throughout the entire process, and was attentive to my needs. I am very satisfied with her practice and would recommend her without hesitation.",
+        author: "A SATISFIED CLIENT",
+      },
+      {
+        quote:
+          "With gratitude — we are so pleased with how professional, knowledgeable, understanding, and reliable our experience was from start to finish.",
+        author: "A GRATEFUL FAMILY",
       },
     ],
   },
@@ -664,7 +674,7 @@ export const content = {
     contactUs: "Contact Us",
     copyright: "© 2026 Matos Legal, PLLC. All rights reserved.",
     disclaimer:
-      "The material presented on this site is intended for information purposes only and it is included with the understanding and agreement that MATOS LEGAL is not engaged in rendering legal or other professional services by posting said material. The services of a competent professional should be sought if legal or other specific expert assistance is required. Some links within this website may lead to other sites. MATOS LEGAL does not necessarily sponsor, endorse or otherwise approve of the materials appearing in such sites.",
+      "The material presented on this site is intended for information purposes only and it is included with the understanding and agreement that MATOS LEGAL is not engaged in rendering legal or other professional services by posting said material. The services of a competent professional should be sought if legal or other specific professional assistance is required. Some links within this website may lead to other sites. MATOS LEGAL does not necessarily sponsor, endorse or otherwise approve of the materials appearing in such sites.",
   },
 };
 

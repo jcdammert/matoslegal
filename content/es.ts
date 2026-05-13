@@ -236,7 +236,7 @@ export const content: Content = {
           intro:
             "Somos, en esencia, litigantes. El litigio civil es el proceso legal mediante el cual los individuos y las empresas resuelven disputas en los tribunales — buscando compensación por daños, ejecución de derechos legales o medidas cautelares para detener conductas ilícitas. En Matos Legal, representamos tanto a demandantes como a demandados en asuntos civiles que van desde simples disputas contractuales hasta litigios complejos con múltiples partes.",
           body: [
-            "Manejamos cada fase del proceso de litigio civil: investigación y demanda pre-juicio, presentación o respuesta a demandas, descubrimiento escrito y documental, deposiciones, testigos expertos, práctica de mociones, mediación, juicio y — cuando es necesario — apelación.",
+            "Manejamos cada fase del proceso de litigio civil: investigación y demanda pre-juicio, presentación o respuesta a demandas, descubrimiento escrito y documental, deposiciones, testigos calificados, práctica de mociones, mediación, juicio y — cuando es necesario — apelación.",
             "Nuestros años de experiencia en la ACLU de Florida y en la práctica civil privada en todo el Sur de la Florida nos brindan una amplitud de perspectiva — y un conjunto de herramientas estratégicas — que los abogados con enfoque estrecho simplemente no pueden igualar. Sin importar la naturaleza de su disputa, nuestro objetivo es el mismo: comprender su situación a fondo, asesorarle honestamente y perseguir el mejor resultado posible.",
           ],
           services: {
@@ -380,7 +380,7 @@ export const content: Content = {
             heading: "Cómo Funciona Su Caso de Lesiones Personales",
             steps: [
               { num: "01", title: "Busque atención médica de inmediato", body: "Su salud es lo primero — y la documentación médica oportuna es esencial para su caso. Una brecha en el tratamiento es lo primero que las compañías de seguros usan para argumentar que sus lesiones no son graves." },
-              { num: "02", title: "Investigamos y preservamos la evidencia", body: "Recopilamos informes policiales, declaraciones de testigos, imágenes de vigilancia y opiniones de expertos antes de que se pierda evidencia crítica. La investigación temprana marca una diferencia medible en la solidez de su caso." },
+              { num: "02", title: "Investigamos y preservamos la evidencia", body: "Recopilamos informes policiales, declaraciones de testigos, imágenes de vigilancia y opiniones de especialistas antes de que se pierda evidencia crítica. La investigación temprana marca una diferencia medible en la solidez de su caso." },
               { num: "03", title: "Documentamos su tratamiento y daños", body: "Trabajamos con sus proveedores médicos para asegurarnos de que todas las lesiones estén correctamente documentadas y conectamos su tratamiento directamente con el accidente. También calculamos los salarios perdidos, los costos de atención futura y el dolor y sufrimiento." },
               { num: "04", title: "Paquete de demanda y negociación", body: "Una vez que alcanza la mejoría médica máxima, compilamos un paquete de demanda integral y negociamos agresivamente con la compañía de seguros. Los aseguradores tratan a los abogados de manera diferente que a los reclamantes no representados." },
               { num: "05", title: "Acuerdo o juicio", body: "Si el asegurador no ofrece un valor justo por sus lesiones, presentamos la demanda y nos preparamos para el juicio. Las compañías de seguros saben qué abogados son serios — y ese conocimiento cambia lo que ofrecen." },
@@ -388,8 +388,8 @@ export const content: Content = {
           },
           faq: [
             { q: "¿Qué debo hacer inmediatamente después de un accidente?", a: "Llame al 911 y obtenga un informe policial. Fotografíe todo — vehículos, la escena, sus lesiones y cualquier daño visible. Obtenga información de contacto de todos los testigos. Busque atención médica el mismo día o al día siguiente como máximo, incluso si se siente bien — muchas lesiones no se manifiestan hasta 24 a 72 horas después. No dé una declaración grabada a la compañía de seguros del otro conductor sin hablar primero con un abogado. Esa declaración se usará en su contra." },
-            { q: "¿Cómo se determina el valor de mi reclamación por lesiones personales?", a: "El valor de su reclamación depende de los gastos médicos documentados (pasados y futuros), los salarios perdidos y la capacidad de ingresos disminuida, el dolor y sufrimiento, la incapacidad o discapacidad permanente, y la claridad de la evidencia de responsabilidad. Los ajustadores de seguros están capacitados para minimizar estas cifras. Evaluamos cada elemento desde su perspectiva — para maximizar lo que recupera — y traemos testigos expertos donde la evidencia respalda daños mayores." },
-            { q: "¿Qué es la culpa comparativa y cómo afecta mi recuperación?", a: "Florida adoptó una regla de culpa comparativa modificada en 2023. Si se determina que usted tiene más del 50% de culpa por el accidente, no puede recuperar daños. Si tiene el 50% o menos de culpa, su recuperación se reduce proporcionalmente por su porcentaje de culpa. Las compañías de seguros rutinariamente intentan asignar una culpa desproporcionada a las partes lesionadas para reducir su exposición — combatimos las asignaciones de culpa injustas con evidencia y testimonios de expertos." },
+            { q: "¿Cómo se determina el valor de mi reclamación por lesiones personales?", a: "El valor de su reclamación depende de los gastos médicos documentados (pasados y futuros), los salarios perdidos y la capacidad de ingresos disminuida, el dolor y sufrimiento, la incapacidad o discapacidad permanente, y la claridad de la evidencia de responsabilidad. Los ajustadores de seguros están capacitados para minimizar estas cifras. Evaluamos cada elemento desde su perspectiva — para maximizar lo que recupera — y traemos testigos calificados donde la evidencia respalda daños mayores." },
+            { q: "¿Qué es la culpa comparativa y cómo afecta mi recuperación?", a: "Florida adoptó una regla de culpa comparativa modificada en 2023. Si se determina que usted tiene más del 50% de culpa por el accidente, no puede recuperar daños. Si tiene el 50% o menos de culpa, su recuperación se reduce proporcionalmente por su porcentaje de culpa. Las compañías de seguros rutinariamente intentan asignar una culpa desproporcionada a las partes lesionadas para reducir su exposición — combatimos las asignaciones de culpa injustas con evidencia y testimonios de especialistas." },
             { q: "¿Requiere Florida el seguro PIP y qué cubre?", a: "Sí. Florida exige que todos los conductores lleven un seguro de Protección por Lesiones Personales (PIP), que proporciona hasta $10,000 en cobertura para gastos médicos y salarios perdidos independientemente de la culpa. Sin embargo, el PIP solo cubre el 80% de los gastos médicos y el 60% de los salarios perdidos hasta el límite — y no cubre el dolor y sufrimiento. Para las lesiones más allá de lo que cubre el PIP, es posible que tenga una reclamación contra el seguro de responsabilidad del conductor culpable y, en algunos casos, su propia cobertura de motorista sin seguro o con seguro insuficiente." },
           ],
         },
@@ -398,7 +398,7 @@ export const content: Content = {
         num: "07",
         icon: "gavel",
         title: "Litigio de Derechos Civiles",
-        desc: "Casos selectos de derechos civiles y constitucionales — manejados con convicción y experiencia de la ACLU.",
+        desc: "Casos selectos de derechos civiles y constitucionales — manejados con convicción y la dedicación forjada en la ACLU.",
         slug: "civil-rights",
         detail: {
           heroSub:
@@ -505,6 +505,16 @@ export const content: Content = {
         quote:
           "Es fantástico tener una abogada con corazón, con la experiencia, conocimiento, paciencia y amor que la Dra. Rosalind Matos le dedica a sus clientes — o mejor dicho, a nuestra familia. Cuando toma un caso, se convierte en parte de él. Es como tener una abogada en su hogar a su disposición.",
         author: "JANET BAUTA",
+      },
+      {
+        quote:
+          "La Sra. Matos devolvió puntualmente cada llamada, me mantuvo informado durante todo el proceso y fue atenta a mis necesidades. Estoy muy satisfecho con su práctica y la recomendaría sin vacilar.",
+        author: "UN CLIENTE SATISFECHO",
+      },
+      {
+        quote:
+          "Con gratitud — estamos muy complacidos con lo profesional, conocedora, comprensiva y confiable que fue nuestra experiencia de principio a fin.",
+        author: "UNA FAMILIA AGRADECIDA",
       },
     ],
   },

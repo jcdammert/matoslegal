@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Scale } from "lucide-react";
 import { useLocale } from "@/components/LocaleProvider";
 import { EyebrowLabel } from "@/components/primitives/EyebrowLabel";
@@ -22,9 +23,20 @@ export function AboutFirm() {
               accent={a.headlineAccent}
               className="mb-6"
             />
-            <div className="inline-flex items-center gap-2 bg-[var(--charcoal)] text-white text-xs tracking-[0.15em] uppercase font-medium px-4 py-2 rounded-full">
+            <div className="inline-flex items-center gap-2 bg-[var(--charcoal)] text-white text-xs tracking-[0.15em] uppercase font-medium px-4 py-2 rounded-full mb-8">
               <Scale className="w-3.5 h-3.5 text-[var(--red)]" />
               {a.badge}
+            </div>
+            {/* Seated portrait */}
+            <div className="relative w-[200px] rounded-sm overflow-hidden shadow-md border border-[var(--hairline)]">
+              <div className="absolute -top-2 -left-2 w-8 h-8 bg-[var(--red)] z-0" />
+              <Image
+                src="/images/rosalind-seated.jpg"
+                alt="Rosalind J. Matos, Attorney"
+                width={200}
+                height={248}
+                className="relative z-10 object-cover object-top w-full"
+              />
             </div>
           </RevealOnScroll>
 

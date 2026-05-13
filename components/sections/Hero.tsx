@@ -10,7 +10,7 @@ const ease = [0.22, 0.61, 0.36, 1] as const;
 
 const slides = [
   {
-    url: "https://upload.wikimedia.org/wikipedia/commons/7/79/Ft._Lauderdale%2C_FL%2C_Courthouse%2C_Broward_County%2C_11-21-2010_%2810%29.JPG",
+    url: "/images/broward-courthouse.jpg",
     name: "Broward County Courthouse",
     location: "Fort Lauderdale, FL",
   },

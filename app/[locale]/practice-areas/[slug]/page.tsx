@@ -125,7 +125,7 @@ export default function PracticeAreaDetailPage({
               transition={{ duration: 0.8, delay: 0.1, ease }}
               className="font-display font-medium text-white leading-tight text-[clamp(36px,6vw,80px)] tracking-[-0.015em] mb-5"
             >
-              {locale === "es" ? "Expertos en" : "Expert"}{" "}
+              {locale === "es" ? "Con experiencia en" : "Experienced"}{" "}
               <em className="not-italic italic text-[var(--burgundy)]">{area.title}</em>
             </motion.h1>
 

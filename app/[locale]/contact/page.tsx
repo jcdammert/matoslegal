@@ -201,58 +201,47 @@ export default function ContactPage({
             </div>
           </div>
         </section>
-        {/* Photo + CTA side by side */}
-        <section className="overflow-hidden" style={{ background: "linear-gradient(135deg, var(--charcoal) 0%, #1a0810 60%, #2a1018 100%)" }}>
-          <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2">
-            {/* Photo */}
-            <div className="relative h-72 lg:h-auto min-h-[360px]">
+        {/* Photo + CTA */}
+        <section style={{ background: "linear-gradient(135deg, var(--charcoal) 0%, #1a0810 60%, #2a1018 100%)" }}>
+          <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-12 md:py-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+            {/* Full photo — natural size, no crop */}
+            <div className="w-full max-w-[340px] flex-shrink-0">
               <Image
                 src="/images/rosalind-contact.jpg"
                 alt="Rosalind J. Matos, Attorney at Law"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-              {/* Fade right into dark bg on desktop */}
-              <div
-                className="absolute inset-y-0 right-0 w-24 hidden lg:block"
-                style={{ background: "linear-gradient(to right, transparent, #1a0810)" }}
+                width={680}
+                height={900}
+                className="w-full h-auto rounded-sm shadow-xl"
               />
             </div>
 
             {/* CTA content */}
-            <div className="flex flex-col justify-center px-10 py-14 md:px-16 md:py-20 text-center lg:text-left">
-              {/* Red radial glow */}
-              <div
-                aria-hidden
-                className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full opacity-20 pointer-events-none"
-                style={{ background: "radial-gradient(circle, var(--red) 0%, transparent 70%)" }}
-              />
-              <div className="relative">
-                <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-white italic mb-4">
-                  {t.practiceDetailCta.headlineStart}{" "}
-                  <em className="not-italic text-[var(--burgundy)]">{t.practiceDetailCta.headlineAccent}</em>
-                  {t.practiceDetailCta.headlineEnd}
-                </h2>
-                <p className="text-white/55 text-lg mb-10 max-w-sm mx-auto lg:mx-0">
-                  {t.practiceDetailCta.sub}
-                </p>
-                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-                  <a
-                    href={`tel:${t.practiceDetailCta.phone}`}
-                    className="inline-flex items-center gap-2 bg-[var(--red)] hover:bg-[var(--red-hover)] text-white px-8 py-4 text-xs tracking-[0.2em] uppercase font-medium font-body transition-colors duration-200"
-                  >
-                    {t.practiceDetailCta.cta}
-                  </a>
-                  <a
-                    href={`tel:${t.practiceDetailCta.phone}`}
-                    className="inline-flex items-center gap-2 px-7 py-4 text-xs tracking-[0.2em] uppercase font-medium font-body border border-white/30 text-white/80 hover:border-white/70 hover:text-white transition-all duration-200"
-                  >
-                    {t.practiceDetailCta.phone}
-                  </a>
-                </div>
+            <div className="flex-1 text-center lg:text-left">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-white italic mb-4">
+                {t.practiceDetailCta.headlineStart}{" "}
+                <em className="not-italic text-[var(--burgundy)]">{t.practiceDetailCta.headlineAccent}</em>
+                {t.practiceDetailCta.headlineEnd}
+              </h2>
+              <p className="text-white/55 text-lg mb-10 max-w-sm mx-auto lg:mx-0">
+                {t.practiceDetailCta.sub}
+              </p>
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                <a
+                  href={`/${locale}/contact`}
+                  className="inline-flex items-center gap-2 bg-[var(--red)] hover:bg-[var(--red-hover)] text-white px-8 py-4 text-xs tracking-[0.2em] uppercase font-medium font-body transition-colors duration-200"
+                >
+                  {t.practiceDetailCta.cta}
+                </a>
+                <a
+                  href={`tel:${t.practiceDetailCta.phone}`}
+                  className="inline-flex items-center gap-2 px-7 py-4 text-xs tracking-[0.2em] uppercase font-medium font-body border border-white/30 text-white/80 hover:border-white/70 hover:text-white transition-all duration-200"
+                >
+                  {t.practiceDetailCta.phone}
+                </a>
               </div>
             </div>
+
           </div>
         </section>
       </main>

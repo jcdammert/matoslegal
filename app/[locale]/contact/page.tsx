@@ -1,6 +1,7 @@
 "use client";
 
 import { use } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { getDictionary, isValidLocale, type Locale } from "@/lib/i18n";
@@ -125,12 +126,29 @@ export default function ContactPage({
                 </RevealOnScroll>
               </div>
 
-              {/* Right: Dark contact info card */}
+              {/* Right: Photo + dark contact info card */}
               <RevealOnScroll delay={0.15}>
                 <div
-                  className="rounded-2xl p-8 text-white sticky top-24"
+                  className="rounded-2xl overflow-hidden text-white sticky top-24"
                   style={{ background: "var(--charcoal-2)" }}
                 >
+                  {/* Attorney photo */}
+                  <div className="relative h-72 w-full overflow-hidden">
+                    <Image
+                      src="/images/rosalind-contact.jpg"
+                      alt="Rosalind J. Matos, Attorney at Law"
+                      fill
+                      className="object-cover object-top"
+                      sizes="360px"
+                    />
+                    {/* Fade into card */}
+                    <div
+                      className="absolute inset-x-0 bottom-0 h-16"
+                      style={{ background: "linear-gradient(to top, var(--charcoal-2), transparent)" }}
+                    />
+                  </div>
+
+                  <div className="px-8 pb-8">
                   <EyebrowLabel light className="mb-4">{c.reachUs.eyebrow}</EyebrowLabel>
                   <h3 className="font-display text-2xl font-medium text-white mb-8">
                     {c.reachUs.heading}
@@ -196,6 +214,7 @@ export default function ContactPage({
                         : "Proudly serving South Florida's English and Spanish-speaking communities. Hablamos Español."}
                     </p>
                   </div>
+                  </div>{/* end px-8 pb-8 */}
                 </div>
               </RevealOnScroll>
             </div>

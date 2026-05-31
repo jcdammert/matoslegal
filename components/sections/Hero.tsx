@@ -34,6 +34,11 @@ const slides = [
     name: "Florida Supreme Court",
     location: "Tallahassee, FL",
   },
+  {
+    url: "/images/office.jpg",
+    name: "Our Office",
+    location: "2645 Executive Park Drive • Ste. 676 • Weston FL 33331",
+  },
 ];
 
 const INTERVAL = 6000; // ms between slides

@@ -36,7 +36,7 @@ export const content = {
     eyebrow: "— ABOUT THE FIRM",
     headlineStart: "About",
     headlineAccent: "Matos Legal",
-    badge: "Woman-owned · Bilingual",
+    badge: "Bilingual · South Florida",
     paragraphs: [
       "MATOS LEGAL is a South Florida based civil litigation law firm handling cases in the tri-county area (Miami-Dade, Broward and Palm Beach). We represent clients, both individuals and businesses, seeking legal representation in civil litigation matters, including foreclosure defense, property, consumer and contract disputes, personal injury and civil rights.",
       "We care for our clients and are passionate about our work. We have the experience, drive and dedication to help you find a solution to your legal problem and restore your peace of mind. We cannot guarantee results — but we can guarantee commitment, open communication, integrity and a well-thought strategy tailored to your specific needs.",

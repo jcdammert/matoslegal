@@ -38,7 +38,7 @@ export const content: Content = {
     eyebrow: "— SOBRE EL BUFETE",
     headlineStart: "Sobre",
     headlineAccent: "Matos Legal",
-    badge: "Propiedad de Mujer · Bilingüe",
+    badge: "Bilingüe · Sur de la Florida",
     paragraphs: [
       "MATOS LEGAL es un bufete de litigio civil ubicado en el Sur de la Florida que maneja casos en el área tricomarcal (Miami-Dade, Broward y Palm Beach). Representamos clientes, tanto individuos como empresas, que buscan representación legal en asuntos de litigio civil, incluyendo defensa ante ejecuciones hipotecarias, disputas de propiedad, del consumidor y contractuales, lesiones personales y derechos civiles.",
       "Nos preocupamos por nuestros clientes y somos apasionados de nuestro trabajo. Tenemos la experiencia, determinación y dedicación para ayudarle a encontrar una solución a su problema legal y restaurar su tranquilidad. No podemos garantizar resultados — pero sí podemos garantizar compromiso, comunicación abierta, integridad y una estrategia bien pensada adaptada a sus necesidades específicas.",

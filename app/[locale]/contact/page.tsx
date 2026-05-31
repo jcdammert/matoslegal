@@ -32,49 +32,6 @@ export default function ContactPage({
       <TopBar />
       <Nav />
       <main>
-        {/* Header */}
-        <section className="relative bg-[var(--charcoal)] py-14 md:py-20 overflow-hidden">
-          <div
-            aria-hidden
-            className="absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(var(--hairline) 1px,transparent 1px),linear-gradient(90deg,var(--hairline) 1px,transparent 1px)",
-              backgroundSize: "60px 60px",
-            }}
-          />
-          <div className="relative max-w-[1400px] mx-auto px-6 md:px-12 text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease }}
-            >
-              <EyebrowLabel light className="mb-5">{c.eyebrow}</EyebrowLabel>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1, ease }}
-            >
-              <SectionHeading
-                start={c.headlineStart}
-                accent={c.headlineAccent}
-                light
-                centered
-                className="mb-5"
-              />
-            </motion.div>
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2, ease }}
-              className="text-white/55 max-w-lg mx-auto"
-            >
-              {c.subhead}
-            </motion.p>
-          </div>
-        </section>
-
         {/* Photo + CTA */}
         <section style={{ background: "linear-gradient(135deg, var(--charcoal) 0%, #1a0810 60%, #2a1018 100%)" }}>
           <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-12 md:py-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
@@ -92,21 +49,14 @@ export default function ContactPage({
 
             {/* CTA content */}
             <div className="flex-1 text-center lg:text-left">
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-white italic mb-4">
-                {t.practiceDetailCta.headlineStart}{" "}
-                <em className="not-italic text-[var(--burgundy)]">{t.practiceDetailCta.headlineAccent}</em>
-                {t.practiceDetailCta.headlineEnd}
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-white mb-4">
+                {c.headlineStart}{" "}
+                <em className="not-italic italic text-[var(--burgundy)]">{c.headlineAccent}</em>
               </h2>
               <p className="text-white/55 text-lg mb-10 max-w-sm mx-auto lg:mx-0">
                 {t.practiceDetailCta.sub}
               </p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-                <a
-                  href={`/${locale}/contact`}
-                  className="inline-flex items-center gap-2 bg-[var(--red)] hover:bg-[var(--red-hover)] text-white px-8 py-4 text-xs tracking-[0.2em] uppercase font-medium font-body transition-colors duration-200"
-                >
-                  {t.practiceDetailCta.cta}
-                </a>
                 <a
                   href={`tel:${t.practiceDetailCta.phone}`}
                   className="inline-flex items-center gap-2 px-7 py-4 text-xs tracking-[0.2em] uppercase font-medium font-body border border-white/30 text-white/80 hover:border-white/70 hover:text-white transition-all duration-200"

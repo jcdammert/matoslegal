@@ -488,33 +488,48 @@ export const content: Content = {
     items: [
       {
         quote:
-          "No hay palabras suficientes para describir a Rosalind. Poner mi caso en sus manos me dio paz y esperanza. Es una persona valiosa, excelente, profesional, dedicada y disciplinada. Nos mantuvo constantemente informados durante el proceso. Siempre estuvo disponible para responder nuestras inquietudes, usando todo su conocimiento e ingenio a nuestro favor. Mi familia y yo estamos muy agradecidos.",
-        author: "UN CLIENTE AGRADECIDO",
+          "I can't recommend Rosalind Matos highly enough. She's strategic, thorough, and genuinely invested in her clients. What really sets Rosalind apart is her honesty — she laid out the pros and cons of each path forward, helping me make informed decisions. The result: a dismissal with prejudice. She's not just your attorney — she's your counselor and advocate. If you need someone who will fight for you while giving you honest, practical advice, Rosalind Matos is the attorney you want in your corner.",
+        author: "LEONIDAS PAPAKALOS",
       },
       {
         quote:
-          "Mi esposa y yo le enviamos esta carta para informarle cuán satisfechos estuvimos con su servicio. Quedamos tan impresionados con su compromiso y servicio que cuando usted abrió su propio bufete, la seguimos para que pudiera continuar representándonos personalmente. Gloria y honra a nuestro Señor — fuimos muy bendecidos de tenerla. Le agradecemos mucho su dedicación y servicio.",
-        author: "LA FAMILIA DUPREE",
+          "I had the privilege of working with an amazing real estate lawyer, Rosalind Matos, for a very challenging apartment sale. Her attention to detail, legal knowledge, and problem-solving skills were truly impressive. She guided me through every step, ensuring my interests were protected. I can't thank her enough for making what could have been a stressful ordeal into a manageable and positive experience. Truly outstanding!",
+        author: "MAYNA NEVAREZ",
       },
       {
         quote:
-          "Rosalind, una vez más gracias por su ayuda. Le felicito por el profesionalismo con que trabaja y le agradezco por ayudar a mis amigos ya que todos han quedado contentos con sus resultados. Sobre todo, le agradezco a Dios por su don de servicio.",
-        author: "HENRY BAQUERO",
+          "Rosalind is an excellent professional, giving me support and confidence throughout the entire process she worked on for me.",
+        author: "VALE YANDET",
       },
       {
         quote:
-          "Es fantástico tener una abogada con corazón, con la experiencia, conocimiento, paciencia y amor que la Dra. Rosalind Matos le dedica a sus clientes — o mejor dicho, a nuestra familia. Cuando toma un caso, se convierte en parte de él. Es como tener una abogada en su hogar a su disposición.",
-        author: "JANET BAUTA",
+          "I highly recommend Rosalind Matos for any Real Estate legal needs. She provided my clients with expert guidance, professionalism, and prompt communication throughout their case. Her knowledge and dedication made the process smooth and stress-free. A fantastic attorney to have on your side.",
+        author: "MELANIE GHERSGORIN",
       },
       {
         quote:
-          "La Sra. Matos devolvió puntualmente cada llamada, me mantuvo informado durante todo el proceso y fue atenta a mis necesidades. Estoy muy satisfecho con su práctica y la recomendaría sin vacilar.",
-        author: "UN CLIENTE SATISFECHO",
+          "Rosalind Matos was extremely helpful from the very first conversation over the phone. She was available, quick to assess and address all my concerns. Gave me options and then resolved my situation. She was clear and knowledgeable 100% of the time. Highly recommend Matos Legal!",
+        author: "CYNTHIA CORDOVES",
       },
       {
         quote:
-          "Con gratitud — estamos muy complacidos con lo profesional, conocedora, comprensiva y confiable que fue nuestra experiencia de principio a fin.",
-        author: "UNA FAMILIA AGRADECIDA",
+          "I've known Rosalind for years through networking circles. She is an excellent lawyer who enjoys what she does and cares about helping her clients in foreclosure defense, civil litigation, personal injury and civil rights cases in the tri-county area.",
+        author: "EVAN M. OSTFELD, ESQ.",
+      },
+      {
+        quote:
+          "Rosalind Matos is an excellent lawyer and a great human being full of charisma and values. She is fair, honest, and passionate about what she does. With her professionalism we did not lose our home. You are more than 5 stars.",
+        author: "CRISTINA GRISANTI",
+      },
+      {
+        quote:
+          "We have used Rosalind Matos' services for Tenant or Landlord representation and she was excellent. Very knowledgeable, professional and detail oriented. Recommend her services 100%.",
+        author: "MONICA CATALUÑA",
+      },
+      {
+        quote:
+          "I'm so thankful for our experience! Rosalind went above and beyond to meet our needs and expectations. With gratitude, we are so pleased with how professional, knowledgeable, understanding and reliable our experience was from start to finish. Thank you Rosalind Matos!",
+        author: "JENNIFER ROMAN",
       },
     ],
   },

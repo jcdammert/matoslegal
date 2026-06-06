@@ -85,7 +85,7 @@ export function ContactFormInner() {
           {label(f.name)}
           <input
             type="text"
-            placeholder={t.contact.formFields.name}
+            placeholder=""
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
             className={field("name")}
@@ -96,7 +96,7 @@ export function ContactFormInner() {
           {label(f.phone)}
           <input
             type="tel"
-            placeholder={t.topBar.phone}
+            placeholder=""
             value={form.phone}
             onChange={(e) => setForm({ ...form, phone: e.target.value })}
             className={field("phone")}
@@ -110,7 +110,7 @@ export function ContactFormInner() {
         {label(f.email)}
         <input
           type="email"
-          placeholder={t.topBar.email}
+          placeholder=""
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
           className={field("email")}
@@ -137,7 +137,7 @@ export function ContactFormInner() {
         {label(f.message)}
         <textarea
           rows={4}
-          placeholder={t.hero.subhead}
+          placeholder=""
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
           className={cn(field("message"), "resize-none")}

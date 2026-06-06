@@ -695,13 +695,13 @@ export const content = {
         links: [
           { label: "Broward Court Public Case Search", url: "https://www.browardclerk.org/" },
           { label: "Broward County Property Appraiser", url: "https://www.bcpa.net/" },
-          { label: "Broward County Official Records Search", url: "https://officialrecords.broward.org/" },
-          { label: "Miami-Dade Court Case Search", url: "https://www.miami-dadeclerk.com/" },
+          { label: "Broward County Official Records Search", url: "https://www.broward.org/RecordsTaxesTreasury/Records/Pages/PublicRecordsSearch.aspx" },
+          { label: "Miami-Dade Court Case Search", url: "https://www2.miamidadeclerk.gov/ocs/" },
           { label: "Miami-Dade County Property Appraiser", url: "https://www.miamidade.gov/pa/" },
-          { label: "Miami-Dade Official Records Search", url: "https://onlineservices.miami-dadeclerk.com/" },
+          { label: "Miami-Dade Official Records Search", url: "https://www2.miamidadeclerk.gov/ocs/" },
           { label: "Palm Beach Court Records", url: "https://www.mypalmbeachclerk.com/" },
           { label: "Palm Beach County Property Appraiser", url: "https://pbcpao.gov/" },
-          { label: "Palm Beach Official Records", url: "https://or.pbcgov.com/" },
+          { label: "Palm Beach Official Records", url: "https://erec.mypalmbeachclerk.com/" },
         ],
       },
       {

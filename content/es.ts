@@ -697,13 +697,13 @@ export const content: Content = {
         links: [
           { label: "Búsqueda de Casos Públicos de Broward", url: "https://www.browardclerk.org/" },
           { label: "Tasador de Propiedades del Condado de Broward", url: "https://www.bcpa.net/" },
-          { label: "Búsqueda de Registros Oficiales de Broward", url: "https://officialrecords.broward.org/" },
-          { label: "Búsqueda de Casos del Tribunal de Miami-Dade", url: "https://www.miami-dadeclerk.com/" },
+          { label: "Búsqueda de Registros Oficiales de Broward", url: "https://www.broward.org/RecordsTaxesTreasury/Records/Pages/PublicRecordsSearch.aspx" },
+          { label: "Búsqueda de Casos del Tribunal de Miami-Dade", url: "https://www2.miamidadeclerk.gov/ocs/" },
           { label: "Tasador de Propiedades de Miami-Dade", url: "https://www.miamidade.gov/pa/" },
-          { label: "Búsqueda de Registros Oficiales de Miami-Dade", url: "https://onlineservices.miami-dadeclerk.com/" },
+          { label: "Búsqueda de Registros Oficiales de Miami-Dade", url: "https://www2.miamidadeclerk.gov/ocs/" },
           { label: "Registros del Tribunal de Palm Beach", url: "https://www.mypalmbeachclerk.com/" },
           { label: "Tasador de Propiedades de Palm Beach", url: "https://pbcpao.gov/" },
-          { label: "Registros Oficiales de Palm Beach", url: "https://or.pbcgov.com/" },
+          { label: "Registros Oficiales de Palm Beach", url: "https://erec.mypalmbeachclerk.com/" },
         ],
       },
       {

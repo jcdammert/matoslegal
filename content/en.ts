@@ -529,6 +529,45 @@ export const content = {
           "I'm so thankful for our experience! Rosalind went above and beyond to meet our needs and expectations. With gratitude, we are so pleased with how professional, knowledgeable, understanding and reliable our experience was from start to finish. Thank you Rosalind Matos!",
         author: "JENNIFER ROMAN",
       },
+      {
+        quote:
+          "Rosalind Matos is an experienced lawyer and extremely knowledgeable, but most importantly, she is honest and truly cares for her clients. She is very professional and takes every case very seriously.",
+        author: "GINA LEDEE",
+      },
+      {
+        quote:
+          "Matos Legal and its legal representative Dr. R. Matos were of great help in my case, they assisted me with great professionalism at all times and advised me on the best way to handle my concerns. Thank you Dr. Matos for being there during difficult times!",
+        author: "LOST SYMBOL",
+      },
+      {
+        quote:
+          "For many years, Matos Legal has provided me and my family a very reliable, professional and efficient service in personal and business matters. I strongly recommend their services for any legal counseling.",
+        author: "VICTOR SANTIAGO",
+      },
+      {
+        quote:
+          "My experience with this company was excellent, I received a courteous and professional service. I got the help I needed to resolve my issue in a timely manner. I strongly recommend Rosalind Matos for legal consultancy.",
+        author: "CHRISTIAN VIVAS",
+      },
+      {
+        quote:
+          "Rosalind is very professional and knowledgeable. She has helped us with legal advice a couple of times and we would totally recommend her.",
+        author: "PAULA PADILLA",
+      },
+      {
+        quote:
+          "Very good knowledge in legal matters. In addition to her expertise and professionalism, she provided documentation in a timely manner. Highly recommend her.",
+        author: "ALEXANDRA MONTILLA",
+      },
+      {
+        quote: "The best!! Excellent.",
+        author: "MARIEL GONZALEZ",
+      },
+      {
+        quote:
+          "Super professional, very attentive to the case and providing explanations to the client. I recommend them 100%.",
+        author: "RONALD PEREZ",
+      },
     ],
   },
   finalCta: {

@@ -17,7 +17,7 @@ export const content: Content = {
   hero: {
     eyebrow: "LITIGIO CIVIL EN EL SUR DE LA FLORIDA · EST. 2014",
     headlineStart: "",
-    headlineAccent: "Contáctenos",
+    headlineAccent: "Representación Legal De Confianza",
     subhead:
       "Representación confiable en Miami-Dade, Broward y Palm Beach. Dos décadas de experiencia, adaptadas a su caso.",
     ctaPrimary: "Más Información",

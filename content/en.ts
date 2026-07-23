@@ -15,7 +15,7 @@ export const content = {
   hero: {
     eyebrow: "SOUTH FLORIDA CIVIL LITIGATION · EST. 2014",
     headlineStart: "We Provide",
-    headlineAccent: "Contact Us Today",
+    headlineAccent: "Trusted Legal Representation",
     subhead:
       "Trusted representation across Miami-Dade, Broward and Palm Beach. Two decades of experience, tailored to your case.",
     ctaPrimary: "Learn More",

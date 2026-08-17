@@ -2,11 +2,11 @@
 
 /* ─── Design tokens ─────────────────────────────────────────── */
 :root {
-  --charcoal:      #3a3d42;
-  --charcoal-2:    #2a2d32;
-  --charcoal-3:    #1f2125;
-  --red:           #e63946;
-  --red-hover:     #c92d3a;
+  --charcoal:      #4e5259;
+  --charcoal-2:    #3a3e46;
+  --charcoal-3:    #272c34;
+  --red:           #ff2d40;
+  --red-hover:     #e0203a;
   --burgundy:      #8b2635;
   --white:         #ffffff;
   --cream:         #faf7f2;

@@ -19,7 +19,7 @@ export const content: Content = {
     headlineStart: "",
     headlineAccent: "Representación Legal De Confianza",
     subhead:
-      "Representación confiable en Miami-Dade, Broward y Palm Beach. Dos décadas de experiencia, adaptadas a su caso.",
+      "Representación confiable en Miami-Dade, Broward y Palm Beach — y en todo el estado de Florida. Dos décadas de experiencia, adaptadas a su caso.",
     ctaPrimary: "Más Información",
     ctaSecondary: "Consulta Gratis",
   },
@@ -40,7 +40,7 @@ export const content: Content = {
     headlineAccent: "Matos Legal",
     badge: "Bilingüe · Sur de la Florida",
     paragraphs: [
-      "MATOS LEGAL es un bufete de litigio civil ubicado en el Sur de la Florida que maneja casos en el área tricomarcal (Miami-Dade, Broward y Palm Beach). Representamos clientes, tanto individuos como empresas, que buscan representación legal en asuntos de litigio civil, incluyendo defensa ante ejecuciones hipotecarias, disputas de propiedad, del consumidor y contractuales, lesiones personales y derechos civiles.",
+      "MATOS LEGAL es un bufete de litigio civil del Sur de la Florida que atiende clientes en el Área Tricomarcal (Miami-Dade, Broward y Palm Beach) y en todo el estado de Florida. Representamos a individuos y empresas en asuntos de litigio civil, incluyendo defensa ante ejecuciones hipotecarias, disputas de propiedad, del consumidor y contractuales, lesiones personales y derechos civiles.",
       "Nos preocupamos por nuestros clientes y somos apasionados de nuestro trabajo. Tenemos la experiencia, determinación y dedicación para ayudarle a encontrar una solución a su problema legal y restaurar su tranquilidad. No podemos garantizar resultados — pero sí podemos garantizar compromiso, comunicación abierta, integridad y una estrategia bien pensada adaptada a sus necesidades específicas.",
     ],
   },
@@ -725,7 +725,7 @@ export const content: Content = {
   },
   footer: {
     blurb:
-      "Un bufete de litigio civil con sede en el Sur de la Florida que maneja casos en el área tricomarcal.",
+      "Un bufete de litigio civil del Sur de la Florida que atiende el Área Tricomarcal y clientes en todo el estado de Florida.",
     quickLinks: "Enlaces Rápidos",
     contactUs: "Contáctenos",
     copyright: "© 2026 Matos Legal, PLLC. Todos los derechos reservados.",

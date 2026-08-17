@@ -17,7 +17,7 @@ export const content = {
     headlineStart: "We Provide",
     headlineAccent: "Trusted Legal Representation",
     subhead:
-      "Trusted representation across Miami-Dade, Broward and Palm Beach. Two decades of experience, tailored to your case.",
+      "Trusted representation across Miami-Dade, Broward, and Palm Beach Counties — and statewide throughout Florida. Two decades of experience, tailored to your case.",
     ctaPrimary: "Learn More",
     ctaSecondary: "Free Consultation",
   },
@@ -38,7 +38,7 @@ export const content = {
     headlineAccent: "Matos Legal",
     badge: "Bilingual · South Florida",
     paragraphs: [
-      "MATOS LEGAL is a South Florida based civil litigation law firm handling cases in the tri-county area (Miami-Dade, Broward and Palm Beach). We represent clients, both individuals and businesses, seeking legal representation in civil litigation matters, including foreclosure defense, property, consumer and contract disputes, personal injury and civil rights.",
+      "MATOS LEGAL is a South Florida civil litigation law firm serving clients throughout the Tri-County Area (Miami-Dade, Broward, and Palm Beach Counties) and statewide throughout Florida. We represent individuals and businesses in civil litigation matters, including foreclosure defense, property, consumer and contract disputes, personal injury and civil rights.",
       "We care for our clients and are passionate about our work. We have the experience, drive and dedication to help you find a solution to your legal problem and restore your peace of mind. We cannot guarantee results — but we can guarantee commitment, open communication, integrity and a well-thought strategy tailored to your specific needs.",
     ],
   },
@@ -723,7 +723,7 @@ export const content = {
   },
   footer: {
     blurb:
-      "A South Florida based civil litigation law firm handling cases in the tri-county area.",
+      "A South Florida civil litigation law firm serving the Tri-County Area and clients statewide throughout Florida.",
     quickLinks: "Quick Links",
     contactUs: "Contact Us",
     copyright: "© 2026 Matos Legal, PLLC. All rights reserved.",

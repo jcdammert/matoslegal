@@ -9,14 +9,15 @@ import { MagneticButton } from "@/components/primitives/MagneticButton";
 import { cn } from "@/lib/utils";
 
 interface FormState {
-  name: string;
+  firstName: string;
+  lastName: string;
   phone: string;
   email: string;
   matter: string;
   message: string;
 }
 
-const initial: FormState = { name: "", phone: "", email: "", matter: "", message: "" };
+const initial: FormState = { firstName: "", lastName: "", phone: "", email: "", matter: "", message: "" };
 
 export function ContactFormInner() {
   const { t } = useLocale();
@@ -27,7 +28,8 @@ export function ContactFormInner() {
 
   function validate() {
     const e: Partial<FormState> = {};
-    if (!form.name.trim()) e.name = "Required";
+    if (!form.firstName.trim()) e.firstName = "Required";
+    if (!form.lastName.trim()) e.lastName = "Required";
     if (!form.phone.trim() || !/^[\d\s\-().+]{7,}$/.test(form.phone)) e.phone = "Valid phone required";
     if (!form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Valid email required";
     if (!form.matter) e.matter = "Required";
@@ -44,7 +46,7 @@ export function ContactFormInner() {
       const res = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, firstName: form.name, lastName: "" }),
+        body: JSON.stringify(form),
       });
       if (!res.ok) throw new Error();
       setStatus("success");
@@ -79,19 +81,34 @@ export function ContactFormInner() {
 
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-4">
-      {/* Name + Phone row */}
+      {/* First Name + Last Name row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          {label(f.name)}
+          {label(f.firstName)}
           <input
             type="text"
             placeholder=""
-            value={form.name}
-            onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className={field("name")}
+            value={form.firstName}
+            onChange={(e) => setForm({ ...form, firstName: e.target.value })}
+            className={field("firstName")}
           />
-          {errors.name && <p className="text-[11px] text-[var(--red)] mt-1">{errors.name}</p>}
+          {errors.firstName && <p className="text-[11px] text-[var(--red)] mt-1">{errors.firstName}</p>}
         </div>
+        <div>
+          {label(f.lastName)}
+          <input
+            type="text"
+            placeholder=""
+            value={form.lastName}
+            onChange={(e) => setForm({ ...form, lastName: e.target.value })}
+            className={field("lastName")}
+          />
+          {errors.lastName && <p className="text-[11px] text-[var(--red)] mt-1">{errors.lastName}</p>}
+        </div>
+      </div>
+
+      {/* Phone + Email row */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           {label(f.phone)}
           <input
@@ -103,19 +120,17 @@ export function ContactFormInner() {
           />
           {errors.phone && <p className="text-[11px] text-[var(--red)] mt-1">{errors.phone}</p>}
         </div>
-      </div>
-
-      {/* Email */}
-      <div>
-        {label(f.email)}
-        <input
-          type="email"
-          placeholder=""
-          value={form.email}
-          onChange={(e) => setForm({ ...form, email: e.target.value })}
-          className={field("email")}
-        />
-        {errors.email && <p className="text-[11px] text-[var(--red)] mt-1">{errors.email}</p>}
+        <div>
+          {label(f.email)}
+          <input
+            type="email"
+            placeholder=""
+            value={form.email}
+            onChange={(e) => setForm({ ...form, email: e.target.value })}
+            className={field("email")}
+          />
+          {errors.email && <p className="text-[11px] text-[var(--red)] mt-1">{errors.email}</p>}
+        </div>
       </div>
 
       {/* Matter */}

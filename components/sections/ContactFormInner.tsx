@@ -30,7 +30,7 @@ export function ContactFormInner() {
     const e: Partial<FormState> = {};
     if (!form.firstName.trim()) e.firstName = "Required";
     if (!form.lastName.trim()) e.lastName = "Required";
-    if (!form.phone.trim() || !/^[\d\s\-().+]{7,}$/.test(form.phone)) e.phone = "Valid phone required";
+    if (!form.phone.trim() || form.phone.replace(/\D/g, "").length < 7) e.phone = "Valid phone required";
     if (!form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Valid email required";
     if (!form.matter) e.matter = "Required";
     if (!form.message.trim()) e.message = "Required";

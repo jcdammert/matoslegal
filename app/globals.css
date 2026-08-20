@@ -2,18 +2,19 @@
 
 /* ─── Design tokens ─────────────────────────────────────────── */
 :root {
-  --charcoal:      #4e5259;
-  --charcoal-2:    #3a3e46;
-  --charcoal-3:    #272c34;
-  --red:           #ff2d40;
-  --red-hover:     #e0203a;
+  --charcoal:      #25272B;
+  --charcoal-2:    #2e3035;
+  --charcoal-3:    #1a1c20;
+  --red:           #B82025;
+  --red-hover:     #9F1B20;
   --burgundy:      #8b2635;
-  --white:         #ffffff;
-  --cream:         #faf7f2;
-  --cream-2:       #f2ede4;
-  --text:          #1a1c20;
+  --white:         #FFFFFF;
+  --cream:         #F8F7F4;
+  --cream-2:       #ECEAE6;
+  --text:          #3D4045;
   --text-muted:    #6b6f76;
-  --hairline:      #e5e3df;
+  --hairline:      #D7D5D1;
+  --light-text:    #F1F1F1;
 }
 
 /* ─── Tailwind v4 theme ─────────────────────────────────────── */

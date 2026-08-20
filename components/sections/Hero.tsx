@@ -117,7 +117,7 @@ export function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(105deg, rgba(20,22,26,0.88) 0%, rgba(20,22,26,0.72) 50%, rgba(20,22,26,0.40) 100%)",
+              "linear-gradient(90deg, rgba(25,28,32,0.65) 0%, rgba(25,28,32,0.35) 50%, rgba(25,28,32,0.10) 100%)",
           }}
         />
         {/* Bottom vignette for caption readability */}

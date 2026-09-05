@@ -35,9 +35,12 @@ export function ContactFormInner() {
       setTurnstileError(false);
     };
     (window as any).__mlTurnstileExpired = () => setTurnstileToken("");
+    // If Turnstile has an error, fail open so real users aren't blocked
+    (window as any).__mlTurnstileError = () => setTurnstileToken("__unavailable__");
     return () => {
       delete (window as any).__mlTurnstileSuccess;
       delete (window as any).__mlTurnstileExpired;
+      delete (window as any).__mlTurnstileError;
     };
   }, []);
 
@@ -188,6 +191,7 @@ export function ContactFormInner() {
         data-sitekey="0x4AAAAAEpf_x-4Kyh088cU"
         data-callback="__mlTurnstileSuccess"
         data-expired-callback="__mlTurnstileExpired"
+        data-error-callback="__mlTurnstileError"
       />
       {turnstileError && (
         <p className="text-[11px] text-[var(--red)]">Please complete the verification above.</p>

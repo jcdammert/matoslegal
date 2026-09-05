@@ -3,7 +3,8 @@
 // TODO: Replace this component with GHL native form embed iframe
 // once form is built in GHL dashboard. Keep fallback working until then.
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Script from "next/script";
 import { useLocale } from "@/components/LocaleProvider";
 import { MagneticButton } from "@/components/primitives/MagneticButton";
 import { cn } from "@/lib/utils";
@@ -25,6 +26,20 @@ export function ContactFormInner() {
   const [form, setForm] = useState<FormState>(initial);
   const [errors, setErrors] = useState<Partial<FormState>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [turnstileToken, setTurnstileToken] = useState<string>("");
+  const [turnstileError, setTurnstileError] = useState(false);
+
+  useEffect(() => {
+    (window as any).__mlTurnstileSuccess = (token: string) => {
+      setTurnstileToken(token);
+      setTurnstileError(false);
+    };
+    (window as any).__mlTurnstileExpired = () => setTurnstileToken("");
+    return () => {
+      delete (window as any).__mlTurnstileSuccess;
+      delete (window as any).__mlTurnstileExpired;
+    };
+  }, []);
 
   function validate() {
     const e: Partial<FormState> = {};
@@ -41,12 +56,16 @@ export function ContactFormInner() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!validate()) return;
+    if (!turnstileToken) {
+      setTurnstileError(true);
+      return;
+    }
     setStatus("sending");
     try {
       const res = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, turnstileToken }),
       });
       if (!res.ok) throw new Error();
       setStatus("success");
@@ -159,6 +178,20 @@ export function ContactFormInner() {
         />
         {errors.message && <p className="text-[11px] text-[var(--red)] mt-1">{errors.message}</p>}
       </div>
+
+      <Script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        strategy="afterInteractive"
+      />
+      <div
+        className="cf-turnstile"
+        data-sitekey="0x4AAAAAEpf_x-4Kyh088cU"
+        data-callback="__mlTurnstileSuccess"
+        data-expired-callback="__mlTurnstileExpired"
+      />
+      {turnstileError && (
+        <p className="text-[11px] text-[var(--red)]">Please complete the verification above.</p>
+      )}
 
       <MagneticButton className="w-full" strength={0.15}>
         <button

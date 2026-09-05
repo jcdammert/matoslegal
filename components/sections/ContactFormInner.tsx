@@ -187,7 +187,7 @@ export function ContactFormInner() {
         strategy="afterInteractive"
         onLoad={renderWidget}
       />
-      <div ref={containerRef} />
+      <div ref={containerRef} className="hidden" />
 
       <MagneticButton className="w-full" strength={0.15}>
         <button

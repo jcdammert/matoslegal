@@ -3,7 +3,7 @@
 // TODO: Replace this component with GHL native form embed iframe
 // once form is built in GHL dashboard. Keep fallback working until then.
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Script from "next/script";
 import { useLocale } from "@/components/LocaleProvider";
 import { MagneticButton } from "@/components/primitives/MagneticButton";
@@ -20,6 +20,8 @@ interface FormState {
 
 const initial: FormState = { firstName: "", lastName: "", phone: "", email: "", matter: "", message: "" };
 
+const SITEKEY = "0x4AAAAAEpf_x-4Kyh088cU";
+
 export function ContactFormInner() {
   const { t } = useLocale();
   const f = t.contact.formFields;
@@ -27,21 +29,22 @@ export function ContactFormInner() {
   const [errors, setErrors] = useState<Partial<FormState>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [turnstileToken, setTurnstileToken] = useState<string>("");
-  const [turnstileError, setTurnstileError] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const widgetIdRef = useRef<string | null>(null);
 
+  const renderWidget = () => {
+    if (!containerRef.current || !(window as any).turnstile || widgetIdRef.current) return;
+    widgetIdRef.current = (window as any).turnstile.render(containerRef.current, {
+      sitekey: SITEKEY,
+      callback: (token: string) => setTurnstileToken(token),
+      "expired-callback": () => setTurnstileToken(""),
+      "error-callback": () => setTurnstileToken("__unavailable__"),
+    });
+  };
+
+  // Fallback: if script loaded before component mounted
   useEffect(() => {
-    (window as any).__mlTurnstileSuccess = (token: string) => {
-      setTurnstileToken(token);
-      setTurnstileError(false);
-    };
-    (window as any).__mlTurnstileExpired = () => setTurnstileToken("");
-    // If Turnstile has an error, fail open so real users aren't blocked
-    (window as any).__mlTurnstileError = () => setTurnstileToken("__unavailable__");
-    return () => {
-      delete (window as any).__mlTurnstileSuccess;
-      delete (window as any).__mlTurnstileExpired;
-      delete (window as any).__mlTurnstileError;
-    };
+    if ((window as any).turnstile) renderWidget();
   }, []);
 
   function validate() {
@@ -59,10 +62,6 @@ export function ContactFormInner() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!validate()) return;
-    if (!turnstileToken) {
-      setTurnstileError(true);
-      return;
-    }
     setStatus("sending");
     try {
       const res = await fetch("/api/lead", {
@@ -182,20 +181,13 @@ export function ContactFormInner() {
         {errors.message && <p className="text-[11px] text-[var(--red)] mt-1">{errors.message}</p>}
       </div>
 
+      {/* Turnstile — explicit render so timing is controlled */}
       <Script
-        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
         strategy="afterInteractive"
+        onLoad={renderWidget}
       />
-      <div
-        className="cf-turnstile"
-        data-sitekey="0x4AAAAAEpf_x-4Kyh088cU"
-        data-callback="__mlTurnstileSuccess"
-        data-expired-callback="__mlTurnstileExpired"
-        data-error-callback="__mlTurnstileError"
-      />
-      {turnstileError && (
-        <p className="text-[11px] text-[var(--red)]">Please complete the verification above.</p>
-      )}
+      <div ref={containerRef} />
 
       <MagneticButton className="w-full" strength={0.15}>
         <button

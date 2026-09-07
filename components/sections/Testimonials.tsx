@@ -13,11 +13,13 @@ export function Testimonials() {
   const items = t.testimonials.items;
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [timerKey, setTimerKey] = useState(0);
 
   const go = useCallback(
-    (dir: number) => {
+    (dir: number, fromUser = false) => {
       setDirection(dir);
       setIndex((i) => (i + dir + items.length) % items.length);
+      if (fromUser) setTimerKey((k) => k + 1);
     },
     [items.length]
   );
@@ -25,7 +27,7 @@ export function Testimonials() {
   useEffect(() => {
     const id = setInterval(() => go(1), 7000);
     return () => clearInterval(id);
-  }, [go]);
+  }, [go, timerKey]);
 
   return (
     <section className="bg-[var(--cream)] py-12 md:py-16">
@@ -84,7 +86,7 @@ export function Testimonials() {
               {items.map((_, i) => (
                 <button
                   key={i}
-                  onClick={() => { setDirection(i > index ? 1 : -1); setIndex(i); }}
+                  onClick={() => { setDirection(i > index ? 1 : -1); setIndex(i); setTimerKey((k) => k + 1); }}
                   aria-label={`Testimonial ${i + 1}`}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     i === index ? "bg-[var(--red)] w-6" : "bg-[var(--hairline)]"
@@ -96,14 +98,14 @@ export function Testimonials() {
             {/* Arrows */}
             <div className="flex gap-2">
               <button
-                onClick={() => go(-1)}
+                onClick={() => go(-1, true)}
                 aria-label="Previous"
                 className="w-10 h-10 rounded-full border border-[var(--hairline)] flex items-center justify-center text-[var(--charcoal)] hover:border-[var(--red)] hover:text-[var(--red)] transition-colors"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
               <button
-                onClick={() => go(1)}
+                onClick={() => go(1, true)}
                 aria-label="Next"
                 className="w-10 h-10 rounded-full border border-[var(--hairline)] flex items-center justify-center text-[var(--charcoal)] hover:border-[var(--red)] hover:text-[var(--red)] transition-colors"
               >

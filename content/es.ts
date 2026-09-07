@@ -578,7 +578,7 @@ export const content: Content = {
       {
         quote:
           "Es fantástico tener a un abogado de corazón, con la experiencia, conocimiento, paciencia y amor que la Dra. Rosalind Matos le dedica a sus clientes o, mejor dicho, a nuestras familias. Cuando ella toma un caso, se hace parte de él y es como tener un abogado en tu casa a tu disposición. Nuestra familia se siente feliz de haber conocido y podido tener en un caso a una abogada del calibre de la Dra. Matos.",
-        author: "JANET Y JAIR — WEST PALM BEACH",
+        author: "JANET Y JAIR",
       },
       {
         quote:

@@ -568,6 +568,36 @@ export const content = {
           "Super professional, very attentive to the case and providing explanations to the client. I recommend them 100%.",
         author: "RONALD PEREZ",
       },
+      {
+        quote:
+          "There are not enough words to describe Rosalind. Putting my case in her hands gave me peace and hope. She is a valuable and excellent professional — dedicated, disciplined, and keeps us constantly informed of the process. She is always available to answer our concerns using all her knowledge and ingenuity to our advantage. My family and I are very grateful.",
+        author: "BEATRIZ NAMEN",
+      },
+      {
+        quote:
+          "Es fantástico tener a un abogado de corazón, con la experiencia, conocimiento, paciencia y amor que la Dra. Rosalind Matos le dedica a sus clientes o, mejor dicho, a nuestras familias. Cuando ella toma un caso, se hace parte de él y es como tener un abogado en tu casa a tu disposición. Nuestra familia se siente feliz de haber conocido y podido tener en un caso a una abogada del calibre de la Dra. Matos.",
+        author: "JANET Y JAIR — WEST PALM BEACH",
+      },
+      {
+        quote:
+          "Rosalind, once again, thank you for your help. I congratulate you for the professionalism with which you work, and thank you for helping my friends, as everyone has been happy with your results. Most of all, I thank God for your gift of service.",
+        author: "HENRY BAQUERO",
+      },
+      {
+        quote:
+          "My wife and I are so satisfied with your commitment and service and would like to thank you for our victory over the bank in our foreclosure case. May you continue to be a blessing to others.",
+        author: "ABRAHAM DUPREE",
+      },
+      {
+        quote:
+          "We met you while you were working with another firm that was involved with our case for years, and we were so impressed with your commitment and service that when you opened your own firm, we followed you so you could personally continue representing us. Glory and honor for giving us the victory over the bank in our foreclosure case — it was indeed a miracle. We thank you so much for your dedication and service. May you continue to be a blessing to others.",
+        author: "THE DUPREE FAMILY",
+      },
+      {
+        quote:
+          "Mrs. Matos promptly returned every phone call, kept me informed during the whole process, and was empathetic to my needs. I am very satisfied with her practice and would recommend her without hesitation.",
+        author: "SANDRA",
+      },
     ],
   },
   finalCta: {

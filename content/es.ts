@@ -570,6 +570,36 @@ export const content: Content = {
           "Super professional, very attentive to the case and providing explanations to the client. I recommend them 100%.",
         author: "RONALD PEREZ",
       },
+      {
+        quote:
+          "No hay palabras suficientes para describir a Rosalind. Poner mi caso en sus manos me dio paz y esperanza. Es una profesional valiosa y excelente — dedicada, disciplinada, y nos mantiene constantemente informados del proceso. Siempre está disponible para responder nuestras inquietudes usando todo su conocimiento e ingenio a nuestro favor. Mi familia y yo estamos muy agradecidos.",
+        author: "BEATRIZ NAMEN",
+      },
+      {
+        quote:
+          "Es fantástico tener a un abogado de corazón, con la experiencia, conocimiento, paciencia y amor que la Dra. Rosalind Matos le dedica a sus clientes o, mejor dicho, a nuestras familias. Cuando ella toma un caso, se hace parte de él y es como tener un abogado en tu casa a tu disposición. Nuestra familia se siente feliz de haber conocido y podido tener en un caso a una abogada del calibre de la Dra. Matos.",
+        author: "JANET Y JAIR — WEST PALM BEACH",
+      },
+      {
+        quote:
+          "Rosalind, una vez más gracias por tu ayuda. Te felicito por ese profesionalismo con que trabajas. Gracias también por ayudar a mis amigos, ya que todos han quedado felices con tu labor. Pero, sobre todo, doy gracias a Dios por tener ese don de servicio a las personas.",
+        author: "HENRY BAQUERO",
+      },
+      {
+        quote:
+          "Mi esposa y yo estamos muy satisfechos con su compromiso y servicio, y quisiéramos agradecerle por nuestra victoria sobre el banco en nuestro caso de defensa de ejecución hipotecaria. Que continúe siendo una bendición para otros.",
+        author: "ABRAHAM DUPREE",
+      },
+      {
+        quote:
+          "La conocimos mientras trabajaba en otra firma que estuvo involucrada en nuestro caso por años, y quedamos tan impresionados con su compromiso y servicio que cuando abrió su propia firma, la seguimos para que pudiera continuar representándonos personalmente. Le agradecemos mucho su dedicación y servicio. Que continúe siendo una bendición para otros.",
+        author: "THE DUPREE FAMILY",
+      },
+      {
+        quote:
+          "La Sra. Matos devolvió cada llamada telefónica de inmediato, me mantuvo informada durante todo el proceso y fue empática con mis necesidades. Estoy muy satisfecha con su práctica y la recomendaría sin dudarlo.",
+        author: "SANDRA",
+      },
     ],
   },
   finalCta: {

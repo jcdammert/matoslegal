@@ -20,7 +20,7 @@ interface FormState {
 
 const initial: FormState = { firstName: "", lastName: "", phone: "", email: "", matter: "", message: "" };
 
-const SITEKEY = "0x4AAAAAEpf_x-4Kyh088cU";
+const SITEKEY = "0x4AAAAAAEpf_x-4KyhO88cU";
 
 export function ContactFormInner() {
   const { t } = useLocale();

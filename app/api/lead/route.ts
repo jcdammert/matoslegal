@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false }, { status: 400 });
   }
   const turnstileSecret = process.env.TURNSTILE_SECRET_KEY;
-  if (turnstileSecret && turnstileToken !== "__unavailable__") {
+  if (turnstileSecret) {
     const verify = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: false }, { status: 400 });
     }
   } else {
-    console.log("[/api/lead] Turnstile skipped:", !turnstileSecret ? "no secret set" : "error fallback");
+    console.log("[/api/lead] Turnstile skipped: no secret set");
   }
 
   const webhookUrl = process.env.GHL_WEBHOOK_URL;

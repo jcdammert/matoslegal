@@ -28,6 +28,8 @@ export function ContactFormInner() {
   const [form, setForm] = useState<FormState>(initial);
   const [errors, setErrors] = useState<Partial<FormState>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [agreed, setAgreed] = useState(false);
+  const [checkboxError, setCheckboxError] = useState(false);
 
   const containerRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<string | null>(null);
@@ -101,6 +103,7 @@ export function ContactFormInner() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    if (!agreed) { setCheckboxError(true); return; }
     if (!validate()) return;
     setStatus("sending");
 
@@ -190,6 +193,34 @@ export function ContactFormInner() {
         {errors.message && <p className="text-[11px] text-[var(--red)] mt-1">{errors.message}</p>}
       </div>
 
+      {/* Important Notice */}
+      <div className="border border-[var(--hairline)] bg-[var(--cream)] p-5 space-y-3">
+        <p className="text-[11px] tracking-[0.15em] uppercase font-semibold text-[var(--charcoal)]">
+          {f.disclaimerTitle}
+        </p>
+        {f.disclaimerParagraphs.map((para, i) => (
+          <p key={i} className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+            {para}
+          </p>
+        ))}
+      </div>
+
+      {/* Required acknowledgement checkbox */}
+      <label className="flex items-start gap-3 cursor-pointer group">
+        <input
+          type="checkbox"
+          checked={agreed}
+          onChange={(e) => { setAgreed(e.target.checked); if (e.target.checked) setCheckboxError(false); }}
+          className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--red)] cursor-pointer"
+        />
+        <span className={cn("text-[11px] leading-relaxed", checkboxError ? "text-[var(--red)]" : "text-[var(--text-muted)]")}>
+          {f.disclaimerCheckbox}
+        </span>
+      </label>
+      {checkboxError && (
+        <p className="text-[11px] text-[var(--red)] -mt-2">You must acknowledge the notice above before submitting.</p>
+      )}
+
       {/* Turnstile — execute-on-submit pattern, never auto-fires */}
       <Script
         src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
@@ -214,9 +245,6 @@ export function ContactFormInner() {
         </p>
       )}
 
-      <p className="text-[11px] text-[var(--text-muted)] italic leading-relaxed">
-        {f.disclaimer}
-      </p>
     </form>
   );
 }

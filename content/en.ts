@@ -696,6 +696,14 @@ export const content = {
       matter: "Matter Type",
       message: "Message",
       submit: "Submit",
+      disclaimerTitle: "Important Notice Before You Submit",
+      disclaimerParagraphs: [
+        "Submitting this form does not create an attorney-client relationship with Matos Legal, PLLC or Rosalind Matos, Esq. An attorney-client relationship is formed only after a conflict check has been completed and both you and the firm have signed a written engagement agreement.",
+        "Please do not include confidential or sensitive information in this form. Provide only a brief, general description of your matter. Information you submit before an attorney-client relationship is established may not be treated as privileged or confidential, and it will not prevent this firm from representing another party in the same or a related matter.",
+        "The firm is not able to respond to every inquiry. If you do not hear from us, you should not assume that we are handling your matter or that you do not have a valid claim. Legal claims are subject to strict deadlines, including statutes of limitations, and delay could affect your rights. You are free to consult with any other attorney at any time, and we encourage you to do so promptly if your matter is time-sensitive.",
+        "Information on this website is for general informational purposes only and is not legal advice.",
+      ],
+      disclaimerCheckbox: "I have read and understand the notice above. I understand that submitting this form does not create an attorney-client relationship.",
       disclaimer:
         "Submitting this form does not create an attorney-client relationship. No guarantee of a particular outcome is made or implied.",
       success: "Thank you! We'll be in touch within one business day.",

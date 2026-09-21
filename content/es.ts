@@ -698,6 +698,14 @@ export const content: Content = {
       matter: "Tipo de Asunto",
       message: "Mensaje",
       submit: "Enviar",
+      disclaimerTitle: "Aviso Importante Antes de Enviar",
+      disclaimerParagraphs: [
+        "El envío de este formulario no crea una relación abogado-cliente con Matos Legal, PLLC o Rosalind Matos, Esq. Una relación abogado-cliente se forma únicamente después de que se haya completado una verificación de conflictos y tanto usted como el bufete hayan firmado un acuerdo de representación por escrito.",
+        "Por favor, no incluya información confidencial o sensible en este formulario. Proporcione únicamente una descripción breve y general de su asunto. La información que envíe antes de que se establezca una relación abogado-cliente puede no ser tratada como privilegiada o confidencial, y no impedirá que este bufete represente a otra parte en el mismo asunto o en uno relacionado.",
+        "El bufete no puede responder a todas las consultas. Si no tiene noticias de nuestra parte, no debe asumir que estamos tramitando su asunto ni que no tiene un reclamo válido. Los reclamos legales están sujetos a plazos estrictos, incluidos los plazos de prescripción, y el retraso podría afectar sus derechos. Usted puede consultar con cualquier otro abogado en cualquier momento, y le alentamos a hacerlo de inmediato si su asunto es urgente.",
+        "La información en este sitio web es únicamente para fines informativos generales y no constituye asesoramiento legal.",
+      ],
+      disclaimerCheckbox: "He leído y entiendo el aviso anterior. Entiendo que el envío de este formulario no crea una relación abogado-cliente.",
       disclaimer:
         "El envío de este formulario no crea una relación abogado-cliente. No se hace ni se implica ninguna garantía de un resultado particular.",
       success: "¡Gracias! Nos comunicaremos con usted en un día hábil.",

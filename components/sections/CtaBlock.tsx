@@ -39,7 +39,7 @@ export function CtaBlock() {
               <p className="text-white/55 text-lg mb-10 max-w-sm mx-auto">{c.sub}</p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <MagneticButton>
-                  <Button href={`/${locale}/contact`} variant="primary">
+                  <Button href={`/${locale}/contact#contact-form`} variant="primary">
                     {c.cta}
                   </Button>
                 </MagneticButton>

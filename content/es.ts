@@ -700,12 +700,12 @@ export const content: Content = {
       submit: "Enviar",
       disclaimerTitle: "Aviso Importante Antes de Enviar",
       disclaimerParagraphs: [
-        "El envío de este formulario no crea una relación abogado-cliente con Matos Legal, PLLC o Rosalind Matos, Esq. Una relación abogado-cliente se forma únicamente después de que se haya completado una verificación de conflictos y tanto usted como el bufete hayan firmado un acuerdo de representación por escrito.",
-        "Por favor, no incluya información confidencial o sensible en este formulario. Proporcione únicamente una descripción breve y general de su asunto. La información que envíe antes de que se establezca una relación abogado-cliente puede no ser tratada como privilegiada o confidencial, y no impedirá que este bufete represente a otra parte en el mismo asunto o en uno relacionado.",
-        "El bufete no puede responder a todas las consultas. Si no tiene noticias de nuestra parte, no debe asumir que estamos tramitando su asunto ni que no tiene un reclamo válido. Los reclamos legales están sujetos a plazos estrictos, incluidos los plazos de prescripción, y el retraso podría afectar sus derechos. Usted puede consultar con cualquier otro abogado en cualquier momento, y le alentamos a hacerlo de inmediato si su asunto es urgente.",
-        "La información en este sitio web es únicamente para fines informativos generales y no constituye asesoramiento legal.",
+        "El envío de este formulario no crea una relación abogado-cliente con Matos Legal, PLLC ni con la Lcda. Rosalind Matos. La relación abogado-cliente solo se establece después de completar una verificación de conflictos de interés y de que usted y la firma hayan firmado un acuerdo de representación por escrito.",
+        "Por favor, no incluya información confidencial o delicada en este formulario. Proporcione únicamente una descripción breve y general de su asunto. La información que usted envíe antes de establecerse una relación abogado-cliente podría no considerarse privilegiada ni confidencial, y no impedirá que esta firma represente a otra parte en el mismo asunto o en un asunto relacionado.",
+        "La firma no puede responder a todas las consultas. Si no recibe noticias nuestras, no debe suponer que estamos atendiendo su asunto ni que usted carece de un reclamo válido. Los reclamos legales están sujetos a plazos estrictos, incluidos los plazos de prescripción, y cualquier demora podría afectar sus derechos. Usted tiene plena libertad de consultar con cualquier otro abogado en cualquier momento, y le recomendamos hacerlo con prontitud si su asunto es urgente.",
+        "La información contenida en este sitio web es de carácter general e informativo y no constituye asesoría legal.",
       ],
-      disclaimerCheckbox: "He leído y entiendo el aviso anterior. Entiendo que el envío de este formulario no crea una relación abogado-cliente.",
+      disclaimerCheckbox: "He leído y comprendo el aviso anterior. Entiendo que el envío de este formulario no crea una relación abogado-cliente.",
       disclaimer:
         "El envío de este formulario no crea una relación abogado-cliente. No se hace ni se implica ninguna garantía de un resultado particular.",
       success: "¡Gracias! Nos comunicaremos con usted en un día hábil.",

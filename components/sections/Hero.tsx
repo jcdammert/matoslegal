@@ -182,7 +182,7 @@ export function Hero() {
               </Button>
             </MagneticButton>
             <MagneticButton>
-              <Button href={`/${locale}/contact`} variant="outline-white">
+              <Button href={`/${locale}/contact#contact-form`} variant="outline-white">
                 {h.ctaSecondary}
               </Button>
             </MagneticButton>

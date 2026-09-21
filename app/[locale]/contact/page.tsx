@@ -78,7 +78,7 @@ export default function ContactPage({
               <div className="space-y-8">
                 {/* Form card */}
                 <RevealOnScroll>
-                  <div className="relative bg-white rounded-2xl border border-[var(--hairline)] p-8 md:p-10 shadow-sm overflow-hidden">
+                  <div id="contact-form" className="relative bg-white rounded-2xl border border-[var(--hairline)] p-8 md:p-10 shadow-sm overflow-hidden">
                     {/* Ghost numeral */}
                     <span
                       aria-hidden

@@ -5,6 +5,7 @@ import { LocaleProvider } from "@/components/LocaleProvider";
 import { ScrollProgressBar } from "@/components/primitives/ScrollProgressBar";
 import { getDictionary, isValidLocale, locales, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -65,6 +66,7 @@ export default async function LocaleLayout({
         <LocaleProvider locale={locale as Locale} dictionary={dictionary}>
           {children}
         </LocaleProvider>
+        <Analytics />
       </body>
     </html>
   );
